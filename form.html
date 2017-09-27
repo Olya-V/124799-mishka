@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container">
+        <div class="main-logo">
+          <a class="main-logo__link" href="index.html">
+            <picture class="main-logo__images">
+              <source srcset="http://placehold.it/" media="(min-width: 0px)">
+              <source srcset="http://placehold.it/" media="(min-width: 0px)">
+              <img src="http://placehold.it/86x35" srcset="http://placehold.it/" alt="Логотип магазина Mishka" title="Логотип магазина Mishka">
+            </picture>
+          </a>
+        </div>
+        <button class="button-close" type="button">Закрыть</button>
+        <nav class="site-navigation">
+          <ul class="site-navigation__list">
+            <li class="site-navigation__item">
+              <a class="site-navigation__link" href="catalog.html">
+                Каталог товаров
+              </a>
+            </li>
+            <li class="site-navigation__item">
+              <a class="site-navigation__link" href="form.html">
+                Вязание на заказ
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="user-navigation">
+          <ul class="user-navigation__list">
+            <li class="user-navigation__item user-navigation__item--search">
+              <a class="user-navigation__link" href="search.html">
+                Поиск по сайту
+              </a>
+            </li>
+            <li class="user-navigation__item user-navigation__item--cart">
+              <a class="user-navigation__link" href="cart.html">
+                Корзина: пока пуста
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main-content">
+      <header class="heading heading--inner-gray">
+        <div class="container">
+          <h1 class="title title--main-content">
+            Вязание на заказ
+          </h1>
+        </div>
+      </header>
+      <section class="individual-order">
+        <div class="container">
+          <h2 class="title title--section visually-hidden">
+            Форма индивидуального заказа
+          </h2>
+          <form class="individual-order__form" action="https://echo.htmlacademy.ru" method="post">
+            <p class="individual-order__greeting"></p>
+            <fieldset class="individual-order__section">
+              <legend class="individual-order__type">
+                Тип
+              </legend>
+              <label class="individual-order__option" for="interior">
+                <input class="individual-order__field" type="radio" name="interior" id="interior" checked>
+                Аксессуар для интерьера
+              </label>
+              <label class="individual-order__option" for="toy">
+                Детская игрушка
+                <input class="individual-order__field" type="radio" name="toy" id="toy">
+              </label>
+            </fieldset>
+            <fieldset class="individual-order__section individual-order__section--gray">
+              <legend class="individual-order__type">
+                Цвет
+              </legend>
+              <label class="individual-order__option" for="white">
+                <input class="individual-order__field" type="checkbox" name="white" id="white" checked>
+                Белый
+              </label>
+              <label class="individual-order__option" for="gray">
+                <input class="individual-order__field" type="checkbox" name="gray" id="gray" checked>
+                Серый
+              </label>
+              <label class="individual-order__option" for="tiffany">
+                <input class="individual-order__field" type="checkbox" name="tiffany" id="tiffany">
+                «Тиффани»
+              </label>
+              <label class="individual-order__option" for="black">
+                <input class="individual-order__field" type="checkbox" name="black" id="black">
+                Черный
+              </label>
+              <label class="individual-order__option" for="pink">
+                <input class="individual-order__field" type="checkbox" name="pink" id="pink">
+                Розовый
+              </label>
+              <label class="individual-order__option" for="orange">
+                <input class="individual-order__field" type="checkbox" name="orange" id="orange">
+                Оранжевый
+              </label>
+            </fieldset>
+            <fieldset class="individual-order__section">
+              <legend class="individual-order__type">
+                Фио
+              </legend>
+              <label class="individual-order__option" for="first-name">
+                Имя:
+                <input class="individual-order__field" type="text" name="first-name" id="first-name" placeholder="Введите ваше имя*" required>
+              </label>
+              <label class="individual-order__option" for="last-name">
+                Фамилия:
+                <input class="individual-order__field" type="text" name="last-name" id="last-name" placeholder="Укажите фамилию*" required>
+              </label>
+              <label class="individual-order__option" for="middle-name">
+                Отчество:
+                <input class="individual-order__field" type="text" name="middle-name" id="middle-name" placeholder="Отчество, если желаете">
+              </label>
+            </fieldset>
+            <fieldset class="individual-order__section individual-order__section--gray">
+              <legend class="individual-order__type">
+                Тел
+              </legend>
+              <label class="individual-order__option" for="tel">
+                <span  class="visually-hidden">Ваш телефон</span>
+                <input class="individual-order__field"  type="tel" name="tel" id="tel" placeholder="+7 ХХХ ХХ ХХ*" required>
+              </label>
+            </fieldset>
+            <fieldset class="individual-order__section individual-order__section--gray">
+              <legend class="individual-order__type">
+                E-mail
+              </legend>
+              <label class="individual-order__option" for="email" >
+                <span  class="visually-hidden">Ваш email</span>
+                <input class="individual-order__field" type="email" name="email" id="email" placeholder="Ваш Email*" required>
+              </label>
+            </fieldset>
+            <fieldset class="individual-order__section">
+              <legend class="individual-order__type">
+                Доп
+              </legend>
+              <label class="individual-order__option" for="user-description">
+                <span  class="visually-hidden">Ваши пожелания к заказу</span>
+                <textarea class="individual-order__user-description" name="user-description" id="user-description" cols="30" rows="10"></textarea>
+              </label>
+              <p class="individual-order__warning">*Поля обязательны для заполнения</p>
+            </fieldset>
+            <button class="button button--form" type="submit">Отправить заказ</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <div class="container">
+        <div class="footer-social">
+          <ul class="footer-social__list">
+            <li class="footer-social__item">
+              <a href="" class="footer-social__link">Instagram</a>
+            </li>
+            <li class="footer-social__item">
+              <a href="" class="footer-social__link">Facebook</a>
+            </li>
+            <li class="footer-social__item">
+              <a href="" class="footer-social__link">Twitter</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-copyright">
+          <span class="footer-copyright__details">Разработано</span>
+          <a href="https://htmlacademy.ru/intensive/adaptive" class="footer-copyright__link">HTML Academy</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
