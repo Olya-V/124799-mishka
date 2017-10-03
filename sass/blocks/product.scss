@@ -76,9 +76,10 @@
   &__button {
     padding-left: 100px;
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       .product__icon {
-          fill: $icon-hover;
+        fill: $icon-hover;
       }
     }
 
