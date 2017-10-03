@@ -1,0 +1,24 @@
+$color-main: #ffffff;
+$color-page-heading: #f1f1f1;
+
+$color-title: #000000;
+$color-text: #444444;
+$color-hit-label: #63d1bb;
+
+$color-underline: #ececec;
+
+
+
+$icon-hover: #63d1bb;
+$icon-active: transparentize($icon-hover, 0.7);
+
+$color-text-hover: transparentize($color-title, 0.4);
+$color-text-active: transparentize($color-title, 0.7);
+
+$font-size-page-heading: 27px;
+$line-height-page-heading: 30px;
+
+$font-size-text: 15px;
+$line-height-text: 24px;
+
+$font-family: 'Open Sans', Arial, sans-serif;
