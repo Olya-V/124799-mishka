@@ -17,7 +17,8 @@
     color: $color-text;
   }
 
-  &__name, &__details {
+  &__name,
+  &__details {
     padding-top: 13px;
     padding-bottom: 13px;
     display: table-cell;

@@ -9,9 +9,6 @@
 
   &__link {
     display: block;
-  }
-
-  &__link {
     padding-top: 23px;
     padding-left: 28px;
     padding-bottom: 18px;
@@ -24,7 +21,8 @@
       background-color: #56c3b2;
     }
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       .heading-navigation__icon {
         fill: transparentize(#149080, 0.3);
       }

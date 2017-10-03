@@ -13,7 +13,8 @@
   background-color: $color-main;
   border: 2px solid #444444;
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     color: $color-main;
     background-color: #444444;
   }

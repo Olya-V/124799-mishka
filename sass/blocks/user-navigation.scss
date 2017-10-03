@@ -6,6 +6,7 @@
     padding: 0;
     list-style: none;
   }
+
   &__item {
     text-align: left;
     padding-top: 30px;
@@ -24,7 +25,8 @@
     line-height: $line-height-text;
     color: $color-title;
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       color: $color-text-hover;
 
       .user-navigation__icon {
@@ -48,6 +50,4 @@
   &__icon {
     fill: #d3d2d2;
   }
-
-
 }

@@ -45,14 +45,14 @@
     border: 2px solid transparentize(#444444, 0.9);
 
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       border: 2px solid transparentize(#444444, 0.7);
     }
 
     &:active {
       border: 2px solid #62d1ba;
     }
-
   }
 
   &__button {
@@ -60,10 +60,12 @@
     background-color: $color-hit-label;
     border-color: $color-hit-label;
 
-      &:hover, &:focus, &:active {
-        color: $color-main;
-        background-color: $color-hit-label;
-        border-color: $color-hit-label;
-      }
+    &:hover,
+    &:focus,
+    &:active {
+      color: $color-main;
+      background-color: $color-hit-label;
+      border-color: $color-hit-label;
+    }
   }
 }

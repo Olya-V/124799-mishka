@@ -23,7 +23,8 @@
     line-height: $line-height-text;
     color: $color-title;
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       color: $color-text-hover;
     }
 

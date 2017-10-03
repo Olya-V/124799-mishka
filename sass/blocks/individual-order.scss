@@ -27,7 +27,7 @@
     margin-bottom: 14px;
 
     &:last-child {
-      margin-bottom: 0px;
+      margin-bottom: 0;
     }
   }
 
@@ -45,8 +45,8 @@
       + .individual-order__radio {
         position: absolute;
         content: "";
-        top: 0px;
-        left: 0px;
+        top: 0;
+        left: 0;
         width: 44px;
         height: 44px;
         margin: 0;
@@ -77,10 +77,6 @@
     border: 2px solid #444444;
   }
 
-
-  &__field  {
-
-
   &::-webkit-input-placeholder {
     font-size: $font-size-text + 2px;
     font-weight: normal;
@@ -108,10 +104,9 @@
     line-height: $line-height-text - 6px;
     color: transparentize(#444444, 0.7);
   }
-}
 
-
-  &__field, &__user-description {
+  &__field,
+  &__user-description {
     font-size: $font-size-text + 2px;
     font-weight: normal;
     line-height: $line-height-text - 6px;
@@ -119,12 +114,11 @@
   }
 
   &__warning {
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
     font-size: $font-size-text - 1px;
     font-weight: regular;
     line-height: $line-height-text - 8px;
     color: $color-text;
   }
-
 }

@@ -31,7 +31,8 @@
     color: $color-text;
     border-bottom: 1px solid $color-hit-label;
 
-    &:hover,  &:focus {
+    &:hover,
+    &:focus {
       color: $color-hit-label;
     }
 
@@ -44,5 +45,4 @@
   &__map {
     margin-bottom: 39px;
   }
-
 }

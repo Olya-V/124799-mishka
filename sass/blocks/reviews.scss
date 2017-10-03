@@ -3,7 +3,6 @@
 
   &__section-title {
     margin-bottom: 32px;
-
   }
 
   &__list {
@@ -48,7 +47,8 @@
     background-color: $color-main;
     border: 1px solid $color-underline;
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       .reviews__icon {
         fill: $color-text-hover;
       }

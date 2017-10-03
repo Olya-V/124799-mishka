@@ -13,18 +13,16 @@
     fill: $color-hit-label;
   }
 
-  &:hover, &:focus {
-
+  &:hover,
+  &:focus {
     .footer-copyright__icon {
       fill: #46c1ae;
     }
   }
 
   &:active {
-
     .footer-copyright__details {
       color: transparentize($color-title, 0.7);
-
     }
 
     .footer-copyright__icon {

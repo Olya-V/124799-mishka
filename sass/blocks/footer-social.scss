@@ -9,7 +9,8 @@
     list-style: none;
   }
 
-  &__link:hover,  &__link:focus {
+  &__link:hover,
+  &__link:focus {
     .footer-social__icon {
       fill: #46c1ae;
     }
@@ -20,5 +21,4 @@
       fill: transparentize(#46c1ae, 0.7);
     }
   }
-
 }

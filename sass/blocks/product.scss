@@ -1,5 +1,4 @@
 .product {
-
   &__photo {
     display: block;
     width: 260px;
@@ -13,14 +12,14 @@
     padding-right: 28px;
     border: 1px solid $color-underline;
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       box-shadow: 0 10px 6px 0 transparentize($color-title, 0.9);
     }
 
     &:active {
       box-shadow: 0 3px 5px 0 transparentize($color-title, 0.9);
     }
-
   }
 
   &__link {
@@ -37,7 +36,8 @@
     line-height: $line-height-text;
     color: $color-title;
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       color: $color-text-hover;
     }
 
@@ -74,11 +74,11 @@
   }
 
   &__button {
-  padding-left: 100px;
+    padding-left: 100px;
 
-  &:hover, &:focus {
+    &:hover, &:focus {
       .product__icon {
-        fill: $icon-hover;
+          fill: $icon-hover;
       }
     }
 
@@ -87,6 +87,5 @@
         fill: $icon-active;
       }
     }
-
   }
 }
