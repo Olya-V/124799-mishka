@@ -1,0 +1,32 @@
+.product-hit {
+  margin-bottom: 73px;
+
+  &__promo {
+    margin-bottom: 32px;
+    font-size: $font-size-text;
+    line-height: $line-height-text;
+    font-weight: normal;
+    color: $color-text;
+  }
+
+  &__link {
+    display: block;
+  }
+
+  &__parameters {
+    font-size: $font-size-text - 2px;
+    line-height: $line-height-text + 6px;
+    font-weight: normal;
+    color: $color-text;
+  }
+
+  &__cost {
+    margin-top: 28px;
+    margin-bottom: 29px;
+    text-align: center;
+    font-size: $font-size-text;
+    line-height: $line-height-text;
+    font-weight: bold;
+    color: $color-text;
+  }
+}

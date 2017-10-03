@@ -1,0 +1,92 @@
+.product {
+
+  &__photo {
+    display: block;
+    width: 260px;
+    height: 195px;
+  }
+
+  &__description {
+    padding-top: 29px;
+    padding-bottom: 20px;
+    padding-left: 28px;
+    padding-right: 28px;
+    border: 1px solid $color-underline;
+
+    &:hover, &:focus {
+      box-shadow: 0 10px 6px 0 transparentize($color-title, 0.9);
+    }
+
+    &:active {
+      box-shadow: 0 3px 5px 0 transparentize($color-title, 0.9);
+    }
+
+  }
+
+  &__link {
+    display: block;
+    color: $color-title;
+  }
+
+  &__item-title {
+    margin: 0;
+    margin-bottom: 17px;
+    padding: 0;
+    font-size: $font-size-text + 2px;
+    font-weight: bold;
+    line-height: $line-height-text;
+    color: $color-title;
+
+    &:hover, &:focus {
+      color: $color-text-hover;
+    }
+
+    &:active {
+      color: $color-text-active;
+    }
+  }
+
+  &__parameters {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 20px;
+    font-size: $font-size-text - 2px;
+    font-weight: normal;
+    line-height: $line-height-text + 6px;
+    color: $color-title;
+    border-bottom: 1px solid $color-underline;
+  }
+
+  &__meta {
+    display: inline-flex;
+    padding-top: 26px;
+  }
+
+  &__cost {
+    font-size: $font-size-text;
+    font-weight: bold;
+    line-height: $line-height-text;
+    color: $color-title;
+  }
+
+  &__icon {
+    fill: #d3d2d2;
+  }
+
+  &__button {
+  padding-left: 100px;
+
+  &:hover, &:focus {
+      .product__icon {
+        fill: $icon-hover;
+      }
+    }
+
+    &:active {
+       .product__icon {
+        fill: $icon-active;
+      }
+    }
+
+  }
+}

@@ -1,0 +1,46 @@
+.manufacture {
+  margin-bottom: 58px;
+  padding-top: 26px;
+  padding-bottom: 32px;
+
+  &__containter {
+    padding: 0;
+    margin: 0 30px;
+    border: 1px solid $color-underline;
+  }
+
+  &__section-title {
+    padding-top: 26px;
+    padding-bottom: 26px;
+    padding-left: 90px;
+    font-size: $font-size-text + 2px;
+    font-weight: bold;
+    line-height: $line-height-text;
+    color: $color-title;
+    background-image: url("../img/icon-video.svg");
+    background-repeat: no-repeat;
+    background-position: 10% 50%;
+  }
+
+  &__order{
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 34px;
+    padding-right: 34px;
+  }
+
+  &__description {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 28px;
+    font-size: $font-size-text - 2px;
+    font-weight: normal;
+    line-height: $line-height-text;
+    color: $color-text;
+  }
+
+  &__button {
+    font-size: $font-size-text + 2px;
+    line-height: $line-height-text - 7px;
+  }
+}

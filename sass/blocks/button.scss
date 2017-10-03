@@ -1,0 +1,25 @@
+.button {
+  display: inline-block;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 100%;
+  font-size: $font-size-text + 3px;
+  font-weight: bold;
+  line-height: $line-height-text - 4px;
+  color: $color-text;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+  background-color: $color-main;
+  border: 2px solid #444444;
+
+  &:hover, &:focus {
+    color: $color-main;
+    background-color: #444444;
+  }
+
+  &:active {
+    color: transparentize($color-main, 0.7);
+    background-color: #444444;
+  }
+}

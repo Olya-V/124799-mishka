@@ -1,0 +1,17 @@
+.heading {
+  padding-top: 72px;
+  margin-bottom: 31px;
+
+  &--index {
+    background-image: url("../img/hero-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 355px;
+  }
+
+  &--inner {
+    padding-top: 73px;
+    padding-bottom: 73px;
+    padding-left: 10px;
+    background-color: $color-page-heading;
+  }
+}

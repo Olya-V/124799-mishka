@@ -1,0 +1,31 @@
+.parameters {
+  margin-bottom: 27px;
+
+  &__list {
+    display: table;
+    width: 260px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__item {
+    display: table-row;
+    font-size: $font-size-text;
+    font-weight: normal;
+    line-height: $line-height-text - 4px;
+    color: $color-text;
+  }
+
+  &__name, &__details {
+    padding-top: 13px;
+    padding-bottom: 13px;
+    display: table-cell;
+    text-align: left;
+    border-bottom: 1px solid $color-underline;
+  }
+
+   &__name {
+    width: 95px;
+   }
+}

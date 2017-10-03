@@ -1,0 +1,44 @@
+.features {
+  margin-bottom: 60px;
+
+  &__section-title {
+    margin-bottom: 30px;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__item {
+    margin-bottom: 31px;
+    padding-top: 50px;
+    padding-right: 55px;
+    background-repeat: no-repeat;
+
+    &--materials {
+      background-image: url("../img/icon-feature-flower.svg");
+    }
+
+    &--style {
+      background-image: url("../img/icon-feature-money.svg");
+    }
+
+    &--likes {
+      background-image: url("../img/icon-feature-heart.svg");
+    }
+
+    &--knitting {
+      background-image: url("../img/icon-feature-ball.svg");
+    }
+
+    &--domestic-manufacturer {
+      background-image: url("../img/icon-feature-rocket.svg");
+    }
+
+    &--present-package {
+      background-image: url("../img/icon-feature-gift.svg");
+    }
+  }
+}

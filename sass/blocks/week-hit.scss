@@ -1,0 +1,10 @@
+.week-hit {
+
+  &__label {
+    font-size: $font-size-text + 2px;
+    line-height: $line-height-text - 4px;
+    font-weight: bold;
+    color: $color-hit-label;
+    margin-bottom: 29px;
+  }
+}

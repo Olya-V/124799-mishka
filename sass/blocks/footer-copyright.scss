@@ -1,0 +1,34 @@
+.footer-copyright {
+  pading-top: 22px;
+  padding-bottom: 24px;
+
+  &__details {
+    font-size: $font-size-text + 4px;
+    font-weight: bold;
+    line-height: $line-height-text - 5px;
+    color: $color-title;
+  }
+
+  &__icon {
+    fill: $color-hit-label;
+  }
+
+  &:hover, &:focus {
+
+    .footer-copyright__icon {
+      fill: #46c1ae;
+    }
+  }
+
+   &:active {
+
+    .footer-copyright__details {
+      color: transparentize($color-title, 0.7);
+
+    }
+
+    .footer-copyright__icon {
+      fill: transparentize(#46c1ae, 0.7);
+    }
+  }
+}

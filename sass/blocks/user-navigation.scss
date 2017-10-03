@@ -1,0 +1,53 @@
+.user-navigation {
+  background-color: #ffffff;
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  &__item {
+    text-align: left;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    vertical-align: middle;
+    border-bottom: 1px solid $color-page-heading;
+  }
+
+  &__link {
+    display: block;
+    font-family: $font-family;
+    font-weight: bold;
+    font-size: $font-size-text + 2px;
+    line-height: $line-height-text;
+    color: $color-title;
+
+    &:hover, &:focus {
+      color: $color-text-hover;
+
+      .user-navigation__icon {
+        fill: $icon-hover;
+      }
+    }
+
+    &:active {
+      color: $color-text-active;
+
+      .user-navigation__icon {
+        fill: $icon-active;
+      }
+    }
+  }
+
+  &__image {
+    margin-right: 23px;
+  }
+
+  &__icon {
+    fill: #d3d2d2;
+  }
+
+
+}
