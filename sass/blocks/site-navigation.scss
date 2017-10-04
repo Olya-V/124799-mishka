@@ -1,0 +1,35 @@
+.site-navigation {
+  background-color: #ffffff;
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__item {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 76px;
+    padding-right: 30px;
+    border-bottom: 1px solid $color-page-heading;
+  }
+
+  &__link {
+    display: block;
+    font-family: $font-family;
+    font-weight: bold;
+    font-size: $font-size-text + 2px;
+    line-height: $line-height-text;
+    color: $color-title;
+
+    &:hover,
+    &:focus {
+      color: $color-text-hover;
+    }
+
+    &:active {
+      color: $color-text-active;
+    }
+  }
+}

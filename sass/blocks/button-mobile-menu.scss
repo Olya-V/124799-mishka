@@ -1,0 +1,12 @@
+.button-mobile-menu {
+  width: 21px;
+  height: 21px;
+  border: none;
+  background-image: url("../img/icon-menu-open.svg");
+  background-repeat: no-repeat;
+  background-color: transparent;
+
+  &--close {
+    background-image: url("../img/icon-menu-close.svg");
+  }
+}

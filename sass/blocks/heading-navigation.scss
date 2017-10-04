@@ -1,0 +1,53 @@
+.heading-navigation {
+  margin-top: 121px;
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__link {
+    display: block;
+    padding-top: 23px;
+    padding-left: 28px;
+    padding-bottom: 18px;
+
+    &--interior {
+      background-color: #63d1bb;
+    }
+
+    &--toys {
+      background-color: #56c3b2;
+    }
+
+    &:hover,
+    &:focus {
+      .heading-navigation__icon {
+        fill: transparentize(#149080, 0.3);
+      }
+    }
+
+    &:active {
+      .heading-navigation__icon {
+        fill: transparentize(#149080, 0.7);
+      }
+
+      .heading-navigation__name {
+        color: transparentize($color-main, 0.7);
+      }
+    }
+  }
+
+  &__name {
+    width: 134px;
+    font-size: $font-size-text + 4px;
+    font-weight: bold;
+    line-height: $line-height-text;
+    color: $color-main;
+  }
+
+  &__icon {
+    fill: transparentize(#149080, 0.5);
+  }
+}
