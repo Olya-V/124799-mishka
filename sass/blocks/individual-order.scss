@@ -116,6 +116,7 @@
     padding-bottom: 15px;
     padding-left: 15px;
     border: 2px solid #444444;
+    color: transparentize(#444444, 0.7);
   }
 
   &__field,
@@ -123,10 +124,6 @@
     font-size: $font-size-text + 2px;
     font-weight: normal;
     line-height: $line-height-text - 6px;
-  }
-
-  &__user-description {
-    color: transparentize(#444444, 0.7);
   }
 
   &__warning {
