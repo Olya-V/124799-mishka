@@ -64,8 +64,49 @@
     padding-bottom: 15px;
     border: none;
     box-shadow: 0 2px 0 0 #000000;
-  }
 
+    &--tel,
+    &--email {
+      background-repeat: no-repeat;
+      background-position: 100% 50%;
+    }
+
+    &--tel {
+      background-image: url("../img/icon-phone.svg");
+    }
+
+    &--email {
+      background-image: url("../img/icon-mail.svg");
+    }
+
+    &::-webkit-input-placeholder {
+      font-size: $font-size-text + 2px;
+      font-weight: normal;
+      line-height: $line-height-text - 6px;
+      color: transparentize(#444444, 0.7);
+    }
+
+    &::-moz-placeholder {
+      font-size: $font-size-text + 2px;
+      font-weight: normal;
+      line-height: $line-height-text - 6px;
+      color: transparentize(#444444, 0.7);
+    }
+
+    &:-moz-placeholder {
+      font-size: $font-size-text + 2px;
+      font-weight: normal;
+      line-height: $line-height-text - 6px;
+      color: transparentize(#444444, 0.7);
+    }
+
+    &:-ms-input-placeholder {
+      font-size: $font-size-text + 2px;
+      font-weight: normal;
+      line-height: $line-height-text - 6px;
+      color: transparentize(#444444, 0.7);
+    }
+  }
 
   &__user-description {
     width: 100%;
@@ -77,39 +118,14 @@
     border: 2px solid #444444;
   }
 
-  &::-webkit-input-placeholder {
-    font-size: $font-size-text + 2px;
-    font-weight: normal;
-    line-height: $line-height-text - 6px;
-    color: transparentize(#444444, 0.7);
-  }
-
-  &::-moz-placeholder {
-    font-size: $font-size-text + 2px;
-    font-weight: normal;
-    line-height: $line-height-text - 6px;
-    color: transparentize(#444444, 0.7);
-  }
-
-  &:-moz-placeholder {
-    font-size: $font-size-text + 2px;
-    font-weight: normal;
-    line-height: $line-height-text - 6px;
-    color: transparentize(#444444, 0.7);
-  }
-
-  &:-ms-input-placeholder {
-    font-size: $font-size-text + 2px;
-    font-weight: normal;
-    line-height: $line-height-text - 6px;
-    color: transparentize(#444444, 0.7);
-  }
-
   &__field,
   &__user-description {
     font-size: $font-size-text + 2px;
     font-weight: normal;
     line-height: $line-height-text - 6px;
+  }
+
+  &__user-description {
     color: transparentize(#444444, 0.7);
   }
 
