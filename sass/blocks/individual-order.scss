@@ -126,6 +126,14 @@
     @include font(14px, normal, 16px, $c-text);
   }
 
+  &__button {
+    width: 260px;
+  }
+
+  &__footer {
+    margin: 0 auto;
+  }
+
   @media (min-width: $tablet-width) {
     &__container {
       padding: 0;
@@ -139,7 +147,6 @@
     }
 
     &__section {
-      margin: 0 auto;
       flex-direction: row;
       justify-content: flex-start;
       align-items: baseline;
@@ -211,9 +218,11 @@
     }
 
     &__footer {
+      width: 668px;
+      margin: 0;
       padding-top: 53px;
-      padding-left: 50px;
-      padding-right: 50px;
+      margin-left: 50px;
+      margin-right: 50px;
       display: flex;
       flex-direction: row-reverse;
       justify-content: space-between;
@@ -221,10 +230,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    &__form {
-      align-items: center;
-    }
-
     &__header {
       padding-left: 225px;
       padding-right: 225px;
@@ -244,8 +249,8 @@
 
     &__footer {
       width: 700px;
-      padding-left: 0;
-      padding-right: 0;
+      margin-left: 225px;
+      margin-right: 225px;
     }
   }
 }
