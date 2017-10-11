@@ -3,6 +3,7 @@
 
   &__promo {
     margin-bottom: 32px;
+
     @include font($fs-text, normal, $lh-text, $c-text);
   }
 
@@ -17,6 +18,7 @@
   &__cost {
     margin-top: 28px;
     margin-bottom: 28px;
+
     @include font(17px, bold, $lh-text, $c-text);
     text-align: center;
   }
@@ -26,6 +28,7 @@
 
     &__promo {
       margin-bottom: 32px;
+
       @include font(17px, normal, $lh-mobile-title, $c-text);
     }
 

@@ -3,6 +3,7 @@
   padding-top: 15px;
   padding-bottom: 15px;
   width: 100%;
+
   @include font(17px, bold, 20px, $c-text);
   text-transform: uppercase;
   text-align: center;

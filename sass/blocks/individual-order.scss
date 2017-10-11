@@ -48,6 +48,7 @@
 
   &__option {
     display: block;
+
     @include font(17px, bold, 18px, $c-title-black);
     width: 260px;
 
@@ -116,6 +117,7 @@
     margin: 0;
     padding-top: 18px;
     padding-bottom: 30px;
+
     @include font(14px, normal, 16px, $c-text);
   }
 
@@ -129,7 +131,6 @@
 
     &__type {
       width: 160px;
-
     }
 
     &__options {
@@ -167,10 +168,5 @@
       flex-direction: row-reverse;
       justify-content: space-between;
     }
-
   }
-
-  @media (min-width: $desktop-width) {}
-
-
 }

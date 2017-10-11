@@ -39,6 +39,7 @@
 
   &__name {
     width: 134px;
+
     @include font(19px, bold, $lh-text, $c-main-white);
   }
 

@@ -1,6 +1,5 @@
 
 .heading {
-
   &--index {
     margin-bottom: 31px;
     background-image: url("../img/hero-mobile@1x.jpg");
@@ -15,7 +14,7 @@
 
   &__page-title--index {
     width: 250px;
-    white-space: pre-line
+    white-space: pre-line;
   }
 
   &--inner {
@@ -30,6 +29,7 @@
     padding: 0;
     display: block;
     width: 250px;
+
     @include font($fs-mobile-title, bold, $lh-mobile-title, $c-title-black);
     text-align: center;
   }

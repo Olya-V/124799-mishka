@@ -10,11 +10,13 @@
     margn: 0;
     padding: 0;
     margin-bottom: 32px;
+
     @include font($fs-mobile-section-title, bold, $lh-mobile-title, $c-title-black);
   }
 
   &__list {
     margin-bottom: 34px;
+
     @include list( );
   }
 
@@ -22,12 +24,14 @@
     margin: 0;
     margin-bottom: 35px;
     padding: 0;
+
     @include font($fs-text, normal, $lh-mobile-title, $c-text);
   }
 
   &__author {
     display: block;
     margin-bottom: 12px;
+
     @include font(17px, bold, $lh-text, $c-title-black);
     font-style: normal;
   }
@@ -35,6 +39,7 @@
   &__account {
     display: block;
     margin-bottom: 35px;
+
     @include font(17px, normal, $lh-mobile-title, $c-text);
     font-style: normal;
   }
@@ -79,10 +84,10 @@
     background-position: 0 0;
 
     &__container {
-    position: relative;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding-top: 78px;
+      position: relative;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding-top: 78px;
   }
     &__section-title {
       order: 0;
@@ -143,7 +148,7 @@
     }
 
     &__details {
-      width: 775px
+      width: 775px;
     }
 
     &__buttons {

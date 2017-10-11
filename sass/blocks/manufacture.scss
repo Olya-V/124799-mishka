@@ -16,6 +16,7 @@
     padding-top: 26px;
     padding-bottom: 26px;
     padding-left: 90px;
+
     @include font(17px, bold, $lh-text, $c-title-black);
     background-image: url("../img/icon-video.svg");
     background-repeat: no-repeat;
@@ -38,6 +39,7 @@
     padding: 0;
     margin: 0;
     margin-bottom: 28px;
+
     @include font(13px, normal, $lh-text, $c-text);
   }
 
@@ -100,6 +102,7 @@
 
     &__description {
       margin-bottom: 52px;
+
       @include font(15px, normal, $lh-mobile-title, $c-text);
     }
 
@@ -112,5 +115,4 @@
       padding-bottom: 60px;
     }
   }
-
 }

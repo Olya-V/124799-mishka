@@ -14,6 +14,7 @@
     margin: 0;
     margin-bottom: 39px;
     padding: 0;
+
     @include font(18px, bold, $lh-mobile-title, $c-title-black);
   }
 
@@ -33,6 +34,7 @@
     display: flex;
     align-items: flex-start;
     margin-bottom: 37px;
+
     @include font($fs-text, normal, $lh-mobile-title, $c-text);
     font-style: normal;
   }
@@ -103,7 +105,7 @@
     &__type,
     &__email,
     &__address {
-        font-size: 17px;
+      font-size: 17px;
     }
 
     &__address {
@@ -114,7 +116,6 @@
       font-size: 17px;
       width: 230px;
     }
-
   }
 
   @media (min-width: $desktop-width) {

@@ -4,11 +4,13 @@
   &__list {
     display: table;
     width: 260px;
+
     @include list( );
   }
 
   &__item {
     display: table-row;
+
     @include font($fs-text, bormal, 20px, $c-text);
   }
 

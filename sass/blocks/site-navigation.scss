@@ -4,6 +4,7 @@
   &__list {
     display: flex;
     flex-direction: column;
+
     @include list( );
   }
 
@@ -16,6 +17,7 @@
     padding-top: 22px;
     padding-bottom: 30px;
     padding-left: 75px;
+
     @include font(17px, bold, $lh-text, $c-title-black);
 
     &:hover,
@@ -56,18 +58,18 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 0px;
+    padding-left: 0;
     order: 0;
     position: relative;
     margin-top: 0;
     width: 400px;
-  }
 
-  &:first-child {
-    border-right: 1px solid  $c-page-heading-gray;
-  }
+    &:first-child {
+      border-right: 1px solid  $c-page-heading-gray;
+    }
 
-  &__link {
+    &__link {
       font-size: 17px;
     }
+  }
 }

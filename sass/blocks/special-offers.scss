@@ -10,11 +10,8 @@
     display: block;
     padding-top: 23px;
     padding-bottom: 23px;
+
     @include font($fs-text, bold, $lh-text, $c-title-black);
-  }
-
-  @media (min-width: $tablet-width) {
-
   }
 
   @media (min-width: $desktop-width) {

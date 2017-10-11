@@ -4,6 +4,7 @@
   &__list {
     display: flex;
     flex-direction: column;
+
     @include list( );
   }
 
@@ -18,6 +19,7 @@
     justify-content: flex-start;
     align-items: center;
     padding-left: 30px;
+
     @include font(17px, bold, $lh-text, $c-title-black);
 
     &:hover,
