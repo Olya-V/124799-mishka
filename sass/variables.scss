@@ -1,22 +1,36 @@
-$color-main: #ffffff;
-$color-page-heading: #f1f1f1;
+$tablet-width: 768px;
+$desktop-width: 1150px;
 
-$color-title: #000000;
-$color-text: #444444;
-$color-hit-label: #63d1bb;
+$c-main-white: #ffffff;
+$c-page-heading-gray: #f1f1f1;
 
-$color-underline: #ececec;
+$c-title-black: #000000;
+$c-text: #444444;
+$c-hit-label: #63d1bb;
+
+$c-underline: #ececec;
 
 $icon-hover: #63d1bb;
 $icon-active: transparentize($icon-hover, 0.7);
 
-$color-text-hover: transparentize($color-title, 0.4);
-$color-text-active: transparentize($color-title, 0.7);
+$c-text-hover: transparentize($c-title-black, 0.4);
+$c-text-active: transparentize($c-title-black, 0.7);
 
-$font-size-page-heading: 27px;
-$line-height-page-heading: 30px;
+$fs-text: 15px;
+$lh-text: 24px;
 
-$font-size-text: 15px;
-$line-height-text: 24px;
+$fs-mobile-section-title: 25px;
+$fs-mobile-title: 27px;
+$lh-mobile-title: 30px;
+
+$fs-tablet-title: 43px;
+$lh-tablet-title: 50px;
+
+$fs-desktop-title: 53px;
+$lh-desktop-title: 57px;
+
+$fs-mobile-catalog: 17px;
+$fs-tablet-desktop-catalog: 20px;
+$lh-catalog: 24px;
 
 $font-family: "Open Sans", arial, sans-serif;

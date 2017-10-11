@@ -1,33 +1,28 @@
 .user-navigation {
-  background-color: #ffffff;
+  background-color: $c-main-white;
 
   &__list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+    display: flex;
+    flex-direction: column;
+    @include list( );
   }
 
   &__item {
-    text-align: left;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-left: 30px;
-    padding-right: 30px;
-    vertical-align: middle;
-    border-bottom: 1px solid $color-page-heading;
+    border-bottom: 1px solid $c-page-heading-gray;
   }
 
   &__link {
-    display: block;
-    font-family: $font-family;
-    font-weight: bold;
-    font-size: $font-size-text + 2px;
-    line-height: $line-height-text;
-    color: $color-title;
+    display: flex;
+    min-height: 80px;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 30px;
+    @include font(17px, bold, $lh-text, $c-title-black);
 
     &:hover,
     &:focus {
-      color: $color-text-hover;
+      color: $c-text-hover;
 
       .user-navigation__icon {
         fill: $icon-hover;
@@ -35,7 +30,7 @@
     }
 
     &:active {
-      color: $color-text-active;
+      color: $c-text-active;
 
       .user-navigation__icon {
         fill: $icon-active;
@@ -43,11 +38,50 @@
     }
   }
 
-  &__image {
-    margin-right: 23px;
+  &__name {
+    padding-left: 26px;
   }
 
   &__icon {
     fill: #d3d2d2;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 398px;
+
+    &__list {
+      flex-direction: row;
+    }
+
+    &__item {
+      min-height: 88px;
+      border-bottom: none;
+      border-left: 1px solid $c-page-heading-gray;
+    }
+
+    &__link {
+      &--search {
+        width: 83px;
+      }
+
+      &--cart {
+        width: 314px;
+      }
+    }
+
+    &__name {
+      &--search {
+        display: none;
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 2;
+    width: 400px;
+
+    &__list {
+      justify-content: flex-end;
+    }
   }
 }

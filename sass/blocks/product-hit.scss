@@ -3,30 +3,61 @@
 
   &__promo {
     margin-bottom: 32px;
-    font-size: $font-size-text;
-    line-height: $line-height-text;
-    font-weight: normal;
-    color: $color-text;
+    @include font($fs-text, normal, $lh-text, $c-text);
+  }
+
+  &__parameters {
+    @include font($fs-text, normal, 20px, $c-text);
   }
 
   &__link {
     display: block;
   }
 
-  &__parameters {
-    font-size: $font-size-text - 2px;
-    line-height: $line-height-text + 6px;
-    font-weight: normal;
-    color: $color-text;
-  }
-
   &__cost {
     margin-top: 28px;
-    margin-bottom: 29px;
+    margin-bottom: 28px;
+    @include font(17px, bold, $lh-text, $c-text);
     text-align: center;
-    font-size: $font-size-text;
-    line-height: $line-height-text;
-    font-weight: bold;
-    color: $color-text;
+  }
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+
+    &__promo {
+      margin-bottom: 32px;
+      @include font(17px, normal, $lh-mobile-title, $c-text);
+    }
+
+    &__cost {
+      @include font(20px, bold, $lh-text, $c-text);
+      margin-top: 40px;
+      margin-bottom: 34px;
+    }
+
+    &__link {
+      position: absolute;
+      right: -385px;
+      top: 22px;
+      width: 333px;
+      height: 404px;
+      background-color: yellow;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &__link {
+      position: absolute;
+      right: -590px;
+      top: -135px;
+      width: 525px;
+      height: 636px;
+      background-color: yellow;
+    }
+
+    &__cost {
+      margin-top: 110px;
+      margin-bottom: 34px;
+    }
   }
 }

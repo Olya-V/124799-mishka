@@ -1,72 +1,72 @@
 .product {
+  border: 1px solid $c-underline;
+  width: 260px;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 10px 6px 0 transparentize($c-title-black, 0.9);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 transparentize($c-title-black, 0.9);
+  }
+
   &__photo {
     display: block;
-    width: 260px;
     height: 195px;
   }
 
   &__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 260px;
     padding-top: 29px;
-    padding-bottom: 20px;
+    padding-bottom: 27px;
     padding-left: 28px;
     padding-right: 28px;
-    border: 1px solid $color-underline;
-
-    &:hover,
-    &:focus {
-      box-shadow: 0 10px 6px 0 transparentize($color-title, 0.9);
-    }
-
-    &:active {
-      box-shadow: 0 3px 5px 0 transparentize($color-title, 0.9);
-    }
   }
 
   &__link {
     display: block;
-    color: $color-title;
+    color: $c-title-black;
   }
 
   &__item-title {
     margin: 0;
-    margin-bottom: 17px;
+    margin-bottom: 16px;
     padding: 0;
-    font-size: $font-size-text + 2px;
-    font-weight: bold;
-    line-height: $line-height-text;
-    color: $color-title;
+    @include font(17px, bold, $lh-text, $c-title-black);
 
     &:hover,
     &:focus {
-      color: $color-text-hover;
+      color: $c-text-hover;
     }
 
     &:active {
-      color: $color-text-active;
+      color: $c-text-active;
     }
   }
 
   &__parameters {
     margin: 0;
     padding: 0;
-    padding-bottom: 20px;
-    font-size: $font-size-text - 2px;
-    font-weight: normal;
-    line-height: $line-height-text + 6px;
-    color: $color-title;
-    border-bottom: 1px solid $color-underline;
+    margin-bottom: 27px;
+    @include font(13px, normal, $lh-mobile-title, $c-title-black);
   }
 
+
   &__meta {
-    display: inline-flex;
+    align-self: flex-end;
+    display: flex;
+    justify-content: space-between;
+    width: 205px;
     padding-top: 26px;
+    border-top: 1px solid $c-underline;
   }
 
   &__cost {
-    font-size: $font-size-text;
-    font-weight: bold;
-    line-height: $line-height-text;
-    color: $color-title;
+    @include font($fs-text, normal, $lh-text, $c-title-black);
   }
 
   &__icon {
@@ -74,7 +74,7 @@
   }
 
   &__button {
-    padding-left: 100px;
+    padding-left: 50px;
 
     &:hover,
     &:focus {
@@ -87,6 +87,48 @@
       .product__icon {
         fill: $icon-active;
       }
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 668px;
+
+    &__photo {
+      width: 334px;
+      height: 334px;
+      background-color: yellow;
+    }
+
+    &__description {
+      width: 334px;
+      min-height: 334px;
+      padding-left: 33px;
+      padding-right: 33px;
+    }
+
+    &__meta {
+      width: 269px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 316px;
+
+    &__photo {
+      width: 316px;
+      height: 462px;
+      background-color: yellow;
+    }
+
+    &__description {
+      width: 316px;
+      min-height: 197px;
+      padding-top: 27px;
+      padding-bottom: 30px;
+    }
+
+    &__meta {
+      width: 256px;
     }
   }
 }

@@ -4,17 +4,12 @@
   &__list {
     display: table;
     width: 260px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
+    @include list( );
   }
 
   &__item {
     display: table-row;
-    font-size: $font-size-text;
-    font-weight: normal;
-    line-height: $line-height-text - 4px;
-    color: $color-text;
+     @include font($fs-text, bormal, 20px, $c-text);
   }
 
   &__name,
@@ -23,7 +18,7 @@
     padding-bottom: 13px;
     display: table-cell;
     text-align: left;
-    border-bottom: 1px solid $color-underline;
+    border-bottom: 1px solid $c-underline;
   }
 
   &__name {

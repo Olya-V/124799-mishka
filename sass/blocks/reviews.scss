@@ -1,34 +1,46 @@
 .reviews {
   margin-bottom: 93px;
 
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+
   &__section-title {
+    margn: 0;
+    padding: 0;
     margin-bottom: 32px;
+    @include font($fs-mobile-section-title, bold, $lh-mobile-title, $c-title-black);
   }
 
   &__list {
-    margin: 0;
     margin-bottom: 34px;
-    padding: 0;
-    list-style: none;
+    @include list( );
   }
 
   &__details {
     margin: 0;
     margin-bottom: 35px;
     padding: 0;
-    font-size: $font-size-text;
-    line-height: $line-height-text + 6px;
-    font-weight: regular;
-    font-color: $color-text;
+    @include font($fs-text, normal, $lh-mobile-title, $c-text);
   }
 
   &__author {
+    display: block;
     margin-bottom: 12px;
-    font-size: $font-size-text + 2px;
+    @include font(17px, bold, $lh-text, $c-title-black);
     font-style: normal;
-    font-weight: bold;
-    line-height: $line-height-text;
-    font-color: $color-title;
+  }
+
+   &__account {
+    display: block;
+    margin-bottom: 35px;
+    @include font(17px, normal, $lh-mobile-title, $c-text);
+    font-style: normal;
+  }
+
+  &__button {
+    font-size: 18px;
   }
 
   &__buttons {
@@ -37,27 +49,110 @@
   }
 
   &__icon {
-    fill: $color-title;
+    fill: $c-title-black;
   }
 
   &__arrow-button {
     width: 132px;
     padding-top: 12px;
     padding-bottom: 12px;
-    background-color: $color-main;
-    border: 1px solid $color-underline;
+    background-color: $c-main-white;
+    border: 1px solid $c-underline;
 
     &:hover,
     &:focus {
       .reviews__icon {
-        fill: $color-text-hover;
+        fill: $c-text-hover;
       }
     }
 
     &:active {
       .reviews__icon {
-        fill: $color-text-active;
+        fill: $c-text-active;
       }
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    &__container {
+    position: relative;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 78px;
+  }
+    &__section-title {
+      order: 0;
+      width: 185px;
+      margin-top: 0;
+      margin-bottom: 0;
+      margin-right: 305px;
+      font-size: $fs-tablet-title;
+      line-height: $lh-tablet-title;
+    }
+
+    &__list {
+      order: 2;
+      width: 668px;
+    }
+
+    &__details {
+      margin-top: 50px;
+      font-size: 17px;
+    }
+
+    &__author {
+      font-size: 18px;
+    }
+
+    &__buttons {
+      margin-bottom: 0;
+      order: 3;
+      position: absolute;
+      top: 280px;
+      left: 540px;
+    }
+
+    &__button {
+      order: 1;
+      width: 176px;
+      font-size: 17px;
+    }
+
+
+    &__arrow-button {
+      border: 1px solid transparent;
+      width: 83px;
+    }
+  }
+
+  @media (min-width: 1150px) {
+    background-position: 100px 0;
+
+    &__container {
+      padding-left: 225px;
+    }
+
+    &__section-title {
+      font-size: $fs-desktop-title;
+      line-height: $lh-desktop-title;
+      margin-right: 510px;
+    }
+
+    &__details {
+      width: 775px
+    }
+
+    &__buttons {
+      left: 920px;
+      top: 320px;
+    }
+
+    &__author {
+      font-size: 17px;
     }
   }
 }
