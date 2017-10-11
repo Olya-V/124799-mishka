@@ -1,5 +1,10 @@
 
 .heading {
+  &__container {
+    margin: 0 auto;
+    width: 320px;
+  }
+
   &--index {
     margin-bottom: 31px;
     background-image: url("../img/hero-mobile@1x.jpg");
@@ -35,6 +40,11 @@
   }
 
   @media (min-width: $tablet-width) {
+    &__container {
+      margin: 0 auto;
+      width: 768px;
+    }
+
     &__page-title--index {
       width: 500px;
       padding-top: 154px;
@@ -55,6 +65,11 @@
   }
 
   @media (min-width: $desktop-width) {
+    &__container {
+      margin: 0 auto;
+      width: 1150px;
+    }
+
     &__page-title--index {
       width: 615px;
       font-size: $fs-desktop-title;

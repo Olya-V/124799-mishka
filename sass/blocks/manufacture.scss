@@ -2,13 +2,15 @@
   margin-bottom: 58px;
   padding-top: 26px;
   padding-bottom: 32px;
+  padding-left: 30px;
+  padding-right: 30px;
 
-  &__containter {
-    padding: 0;
-    margin: 0 30px;
+  &__container {
     border: 1px solid $c-underline;
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
+    width: 260px;
   }
 
   &__section-title {
@@ -48,8 +50,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    &__containter {
-      margin: 0 50px;
+    &__container {
+      width: 668px;
     }
 
     &__video {
@@ -74,9 +76,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    &__containter {
+    &__container {
       align-items: flex-end;
       position: relative;
+      width: 1050px;
     }
 
     &__video {

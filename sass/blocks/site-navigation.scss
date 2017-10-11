@@ -1,9 +1,11 @@
 .site-navigation {
+  width: 100%;
   background-color: $c-main-white;
 
   &__list {
     display: flex;
     flex-direction: column;
+    width: 100%;
 
     @include list( );
   }

@@ -124,7 +124,6 @@
     position: relative;
 
     &__container {
-      margin: 0;
 
       &--details {
         background-position: 10% 10%;
@@ -133,7 +132,7 @@
 
       &--map {
         position: absolute;
-        left: 575px;
+        left: 49.5%;
         top: 20px;
         width: 527px;
         height: 457px;
