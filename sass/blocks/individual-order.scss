@@ -1,6 +1,11 @@
 .individual-order {
   padding-bottom: 55px;
 
+  &__container {
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+
   &__header {
     @include font(13px, normal, $lh-text, $c-text);
   }
@@ -122,11 +127,28 @@
   }
 
   @media (min-width: $tablet-width) {
+    &__container {
+      padding: 0;
+  }
+
+    &__header {
+      @include font(17px, normal, $lh-mobile-title, $c-text);
+      padding-bottom: 60px;
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+
     &__section {
       flex-direction: row;
-      justify-content: space-between;
+      justify-content: flex-start;
       align-items: baseline;
-      width: 668px;
+      width: 100%;
+      padding: 50px;
+
+      &--gray {
+        background-color: $c-page-heading-gray;
+        margin-bottom: 0;
+      }
     }
 
     &__type {
@@ -136,15 +158,36 @@
     &__options {
       width: 501px;
       padding: 0;
+
+      &--color {
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
     }
 
     &__item {
       width: 100%;
+
+        &--color {
+          width: 205px;
+          padding-top: 15px;
+          padding-bottom: 15px;
+        }
     }
 
     &__option {
       width: 501px;
       display: flex;
+    }
+
+    &__field {
+      &--tel {
+        background-color: $c-page-heading-gray;
+      }
+
+      &--email {
+        background-color: $c-page-heading-gray;
+      }
     }
 
     &__name {
@@ -157,6 +200,9 @@
 
     &__warning {
       width: 334px;
+      text-align: right;
+
+      @include font(17px, normal, $lh-mobile-title, $c-text);
     }
 
     &__button {
@@ -164,9 +210,41 @@
     }
 
     &__footer {
+      padding-top: 53px;
+      padding-left: 50px;
+      padding-right: 50px;
       display: flex;
       flex-direction: row-reverse;
       justify-content: space-between;
+    }
+  }
+
+  @media (min-width: $desktop-width){
+    &__form {
+      align-items: center;
+    }
+
+    &__header {
+      padding-left: 225px;
+      padding-right: 225px;
+    }
+
+    &__options {
+      width: 700px;
+    }
+
+    &__option {
+      width: 700px;
+    }
+
+    &__user-description {
+      width: 700px;
+    }
+
+    &__footer {
+      width: 700px;
+      padding-left: 0;
+      padding-right: 0;
     }
   }
 }
