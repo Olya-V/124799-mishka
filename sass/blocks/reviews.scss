@@ -32,7 +32,7 @@
     font-style: normal;
   }
 
-   &__account {
+  &__account {
     display: block;
     margin-bottom: 35px;
     @include font(17px, normal, $lh-mobile-title, $c-text);

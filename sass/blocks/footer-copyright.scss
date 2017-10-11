@@ -4,7 +4,7 @@
   text-align: center;
 
   &__details {
-     @include font(19px, bold, 18px, $c-title-black);
+    @include font(19px, bold, 18px, $c-title-black);
   }
 
   &__icon {
