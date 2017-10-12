@@ -1,5 +1,26 @@
 .main-footer {
-  padding-left: 30px;
-  padding-right: 30px;
-  background-color: $color-page-heading;
+  background-color: $c-page-heading-gray;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+  }
+
+  &__image {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    &__container {
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 0 50px;
+    }
+
+    &__image {
+      display: block;
+      background-color: yellow;
+    }
+  }
 }

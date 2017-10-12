@@ -2,43 +2,105 @@
   margin-bottom: 60px;
 
   &__section-title {
+    @include font($fs-mobile-section-title, bold, $lh-mobile-title, $c-title-black);
     margin-bottom: 30px;
   }
 
   &__list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+    @include list( );
+    display: flex;
+    flex-direction: column;
   }
 
   &__item {
     margin-bottom: 31px;
     padding-top: 50px;
-    padding-right: 55px;
     background-repeat: no-repeat;
 
     &--materials {
+      width: 210px;
       background-image: url("../img/icon-feature-flower.svg");
     }
 
     &--style {
+      width: 210px;
       background-image: url("../img/icon-feature-money.svg");
     }
 
     &--likes {
+      width: 205px;
       background-image: url("../img/icon-feature-heart.svg");
     }
 
     &--knitting {
+      width: 250px;
       background-image: url("../img/icon-feature-ball.svg");
     }
 
     &--domestic-manufacturer {
+      width: 300px;
       background-image: url("../img/icon-feature-rocket.svg");
     }
 
     &--present-package {
+      width: 235px;
       background-image: url("../img/icon-feature-gift.svg");
+    }
+  }
+
+  &__details {
+    @include font(17px, bold, 20px, $c-title-black);
+  }
+
+  @media (min-width: $tablet-width) {
+    &__section-title {
+      font-size: $fs-tablet-title;
+      line-height: $lh-tablet-title;
+    }
+
+    &__list {
+      height: 500px;
+      flex-wrap: wrap;
+    }
+
+    &__item {
+      width: 300px;
+      padding-right: 0;
+
+      &--materials {
+        width: 210px;
+      }
+
+      &--style {
+        width: 240px;
+      }
+
+      &--likes {
+        width: 240px;
+      }
+
+      &--present-package {
+        width: 290px;
+      }
+    }
+
+    &__details {
+      @include font(20px, bold, 22px, $c-title-black);
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &__container {
+      padding-left: 220px;
+    }
+
+    &__section-title {
+      font-size: $fs-desktop-title;
+      line-height: $lh-desktop-title;
+    }
+
+    &__list {
+      padding-rigth: 170px;
     }
   }
 }

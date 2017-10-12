@@ -4,9 +4,14 @@
   border-bottom: 1px solid #e5e5e5;
 
   &__list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+    display: flex;
+    justify-content: center;
+
+    @include list( );
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 40px;
   }
 
   &__link:hover,

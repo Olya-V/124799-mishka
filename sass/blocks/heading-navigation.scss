@@ -2,9 +2,7 @@
   margin-top: 121px;
 
   &__list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+    @include list( );
   }
 
   &__link {
@@ -34,20 +32,41 @@
       }
 
       .heading-navigation__name {
-        color: transparentize($color-main, 0.7);
+        color: transparentize($c-main-white, 0.7);
       }
     }
   }
 
   &__name {
     width: 134px;
-    font-size: $font-size-text + 4px;
-    font-weight: bold;
-    line-height: $line-height-text;
-    color: $color-main;
+
+    @include font(19px, bold, $lh-text, $c-main-white);
   }
 
   &__icon {
     fill: transparentize(#149080, 0.5);
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 358px;
+
+    &__list {
+      display: flex;
+      flex-direction: row;
+    }
+
+    &__item {
+      width: 334px;
+    }
+
+    &__name {
+      @include font(20px, bold, $lh-mobile-title, $c-main-white);
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &__item {
+      width: 525px;
+    }
   }
 }

@@ -1,5 +1,32 @@
 .catalog {
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+  }
+
   &__item {
     margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 260px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &__item {
+      flex-direction: row;
+      width: 668px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &__wrap {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    &__item {
+      flex-direction: column;
+      width: 315px;
+    }
   }
 }

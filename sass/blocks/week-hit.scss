@@ -1,9 +1,79 @@
 .week-hit {
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    margin-bottom: 5px;
+
+    @include font(25px, bold, $lh-mobile-title, $c-title-black);
+  }
+
   &__label {
-    font-size: $font-size-text + 2px;
-    line-height: $line-height-text - 4px;
-    font-weight: bold;
-    color: $color-hit-label;
+    @include font(17px, bold, 20px, $c-hit-label);
+    text-transform: uppercase;
     margin-bottom: 29px;
+  }
+
+  &__description {
+    width: 260px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 65px;
+
+    &__container {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    &__title {
+      width: 430px;
+      margin-right: 140px;
+      font-size: $fs-tablet-title;
+      line-height: $lh-tablet-title;
+    }
+
+    &__label {
+      width: 80px;
+      margin-bottom: 0;
+      padding-top: 10px;
+      line-height: 17px;
+      text-align: center;
+    }
+
+    &__description {
+      width: 290px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 72px;
+
+    &__title {
+      z-index: 2;
+      order: 1;
+      width: 875px;
+      position: relative;
+      font-size: $fs-desktop-title;
+      line-height: $lh-desktop-title;
+      margin-right: 0;
+      margin-bottom: 60px;
+    }
+
+    &__label {
+      order: 0;
+      width: 175px;
+      padding: 0 45px;
+      padding-top: 75px;
+      vertical-align: middle;
+    }
+
+    &__description {
+      order: 2;
+      width: 467px;
+      padding-left: 175px;
+    }
   }
 }
