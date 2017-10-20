@@ -45,7 +45,6 @@
     @include font(17px, bold, $lh-text, $c-title-black);
 
     @include link( );
-
   }
 
   .product__parameters {
@@ -110,7 +109,7 @@
       width: 334px;
       height: 334px;
       padding-top: 25px;
-      padding-left: 26px
+      padding-left: 26px;
     }
 
     .product__item-title {

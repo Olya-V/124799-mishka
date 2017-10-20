@@ -58,6 +58,7 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+
     .user-navigation__list {
       display: flex;
       flex-direction: row;
@@ -87,9 +88,7 @@
 
     .user-navigation__name {
       padding-left: 31px;
-    }
 
-    .user-navigation__name {
       &--search {
         display: none;
       }

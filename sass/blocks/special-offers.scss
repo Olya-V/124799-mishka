@@ -9,7 +9,6 @@
     padding-bottom: 23px;
 
     @include font($fs-text, bold, $lh-text, $c-title-black);
-
     @include link( );
   }
 
