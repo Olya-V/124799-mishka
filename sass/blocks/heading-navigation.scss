@@ -95,8 +95,4 @@
       @include font(20px, bold, $lh-mobile-title, $c-main-white);
     }
   }
-
-  @media (min-width: $desktop-width) {
-
-  }
 }

@@ -43,7 +43,6 @@
     padding: 0;
 
     @include font(17px, bold, $lh-text, $c-title-black);
-
     @include link( );
   }
 

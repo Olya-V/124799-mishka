@@ -217,7 +217,6 @@
   }
 
   .individual-order__field:focus + .individual-order__checkbox {
-    outline: thin dotted;
     outline: 5px auto -webkit-focus-ring-color;
   }
 
@@ -441,6 +440,8 @@
 
     .individual-order__user-description {
       margin-top: 0;
+      width: 501px;
+      font-size: 19px;
     }
 
     .individual-order__field + .individual-order__radio {
@@ -489,11 +490,6 @@
 
     .individual-order__name {
       margin-right: 25px;
-    }
-
-    .individual-order__user-description {
-      width: 501px;
-      font-size: 19px;
     }
 
     .individual-order__warning {
