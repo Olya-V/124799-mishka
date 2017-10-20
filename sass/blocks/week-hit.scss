@@ -1,41 +1,46 @@
 .week-hit {
-  &__container {
+  .week-hit__container {
     display: flex;
     flex-direction: column;
   }
 
-  &__title {
+  .week-hit__title {
     margin-bottom: 5px;
 
     @include font(25px, bold, $lh-mobile-title, $c-title-black);
   }
 
-  &__label {
+  .week-hit__label {
     @include font(17px, bold, 20px, $c-hit-label);
     text-transform: uppercase;
-    margin-bottom: 29px;
+    margin-bottom: 26px;
+    width: auto;
   }
 
-  &__description {
+  .week-hit__description {
     width: 260px;
   }
 
   @media (min-width: $tablet-width) {
-    margin-top: 65px;
+    padding-bottom: 30px;
 
-    &__container {
+    .week-hit__container {
       flex-direction: row;
       flex-wrap: wrap;
+      width: 768px;
+      padding-top: 44px;
     }
 
-    &__title {
+    .week-hit__title {
       width: 430px;
+      margin-top: 0;
+      margin-bottom: 0;
       margin-right: 140px;
       font-size: $fs-tablet-title;
       line-height: $lh-tablet-title;
     }
 
-    &__label {
+    .week-hit__label {
       width: 80px;
       margin-bottom: 0;
       padding-top: 10px;
@@ -43,15 +48,21 @@
       text-align: center;
     }
 
-    &__description {
+    .week-hit__description {
       width: 290px;
+      padding-top: 50px;
     }
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 72px;
+    padding-bottom: 60px;
 
-    &__title {
+    .week-hit__container {
+      width: 1150px;
+      padding-top: 110px;
+    }
+
+    .week-hit__title {
       z-index: 2;
       order: 1;
       width: 875px;
@@ -59,20 +70,19 @@
       font-size: $fs-desktop-title;
       line-height: $lh-desktop-title;
       margin-right: 0;
-      margin-bottom: 60px;
     }
 
-    &__label {
+    .week-hit__label {
       order: 0;
-      width: 175px;
-      padding: 0 45px;
-      padding-top: 75px;
-      vertical-align: middle;
+      width: 168px;
+      padding: 0 30px;
+      padding-top: 13px;
     }
 
-    &__description {
+    .week-hit__description {
       order: 2;
       width: 467px;
+      padding-top: 48px;
       padding-left: 175px;
     }
   }

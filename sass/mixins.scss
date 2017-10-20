@@ -10,3 +10,14 @@
   padding: $padding;
   list-style: $list-style;
 }
+
+@mixin link($hover: $c-text-hover, $active: $c-text-active) {
+  &:hover,
+  &:focus {
+    color: $hover;
+  }
+
+  &:active {
+    color: $active;
+  }
+}

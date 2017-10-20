@@ -1,33 +1,28 @@
 .special-offers {
-  display: none;
-  padding-left: 50px;
-
-  &__list {
+  .special-offers__list {
     @include list( );
   }
 
-  &__link {
+  .special-offers__link {
     display: block;
     padding-top: 23px;
     padding-bottom: 23px;
 
     @include font($fs-text, bold, $lh-text, $c-title-black);
+
+    @include link( );
   }
 
   @media (min-width: $desktop-width) {
-    display: block;
-    position: absolute;
-    z-index: 1;
-    left: 0;
-    margin-top: 84px;
-    order: 2;
-    width: 400px;
-    background: transparent;
-
-    &__list {
+    .special-offers__list {
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
+      justify-content: flex-start;
+    }
+
+    .special-offers__link {
+      width: 218px;
+      padding-top: 17px;
     }
   }
 }

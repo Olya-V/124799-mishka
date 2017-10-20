@@ -1,77 +1,94 @@
 .site-navigation {
-  width: 100%;
   background-color: $c-main-white;
 
-  &__list {
+  .site-navigation__list {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: auto;
 
     @include list( );
   }
 
-  &__item {
+  .site-navigation__item {
     border-bottom: 1px solid $c-page-heading-gray;
   }
 
-  &__link {
+  .site-navigation__link {
+    width: 320px;
+    margin: 0 auto;
     display: block;
-    padding-top: 22px;
-    padding-bottom: 30px;
+    padding-top: 26px;
+    padding-bottom: 28px;
     padding-left: 75px;
 
     @include font(17px, bold, $lh-text, $c-title-black);
+  }
 
-    &:hover,
-    &:focus {
-      color: $c-text-hover;
-    }
-
-    &:active {
-      color: $c-text-active;
-    }
+  .site-navigation__link[href] {
+    @include link( );
   }
 
   @media (min-width: $tablet-width) {
     position: absolute;
     z-index: 1;
     left: 0;
-    margin-top: 84px;
+    margin-top: 88px;
     order: 1;
-    width: 370px;
-    padding-left: 50px;
+    width: 334px;
+    margin-left: 6.5%;
     background: transparent;
 
-    &__list {
+    .site-navigation__list {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
     }
 
-    &__item {
-      min-height: 88px;
+    .site-navigation__item {
       border-bottom: none;
     }
 
-    &__link {
+    .site-navigation__link {
       padding-left: 0;
+      padding-top: 17px;
+      padding-bottom: 17px;
       font-size: $fs-text;
+      width: 167px;
     }
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 0;
+    display: flex;
+    margin-left: 0;
     order: 0;
     position: relative;
     margin-top: 0;
-    width: 400px;
+    width: 466px;
 
-    &:first-child {
-      border-right: 1px solid  $c-page-heading-gray;
+    site-navigation__list {
+      justify-content: flex-end;
     }
 
-    &__link {
+    .site-navigation__item {
+      display: flex;
+      width: 233px;
+      align-items: center;
+      border-bottom: none;
+    }
+
+    .site-navigation__item:not(:last-child) {
+      border-right: 1px solid $c-page-heading-gray;
+    }
+
+    .site-navigation__link {
+      width: 233px;
       font-size: 17px;
+      padding: 0;
+      padding-left: 33px;
+    }
+
+    .site-navigation__item:first-child .site-navigation__link{
+      padding-left: 50px;
     }
   }
 }
