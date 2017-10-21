@@ -1,23 +1,27 @@
 .product-hit {
-  margin-bottom: 73px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 47px;
 
-  &__promo {
-    margin-bottom: 32px;
+  .product-hit__promo {
+    margin: 0;
+    margin-bottom: 14px;
+    padding: 0;
 
     @include font($fs-text, normal, $lh-text, $c-text);
   }
 
-  &__parameters {
+  .product-hit__parameters {
     @include font($fs-text, normal, 20px, $c-text);
   }
 
-  &__link {
+  .product-hit__link {
     display: block;
   }
 
-  &__cost {
-    margin-top: 28px;
-    margin-bottom: 28px;
+  .product-hit__cost {
+    margin-top: 19px;
+    margin-bottom: 24px;
 
     @include font(17px, bold, $lh-text, $c-text);
     text-align: center;
@@ -26,22 +30,22 @@
   @media (min-width: $tablet-width) {
     position: relative;
 
-    &__promo {
+    .product-hit__promo {
       margin-bottom: 32px;
 
       @include font(17px, normal, $lh-mobile-title, $c-text);
     }
 
-    &__cost {
+    .product-hit__cost {
       @include font(20px, bold, $lh-text, $c-text);
-      margin-top: 40px;
+      margin-top: 30px;
       margin-bottom: 34px;
     }
 
-    &__link {
+    .product-hit__link {
       position: absolute;
-      right: -385px;
-      top: 22px;
+      right: -377px;
+      top: 57px;
       width: 333px;
       height: 404px;
       background-color: yellow;
@@ -49,18 +53,22 @@
   }
 
   @media (min-width: $desktop-width) {
-    &__link {
+    .product-hit__link {
       position: absolute;
-      right: -590px;
-      top: -135px;
+      right: -580px;
+      top: -111px;
       width: 525px;
       height: 636px;
       background-color: yellow;
     }
 
-    &__cost {
-      margin-top: 110px;
-      margin-bottom: 34px;
+    .product-hit__promo {
+      margin-bottom: 47px;
+    }
+
+    .product-hit__cost {
+      margin-top: 80px;
+      margin-bottom: 33px;
     }
   }
 }

@@ -1,29 +1,39 @@
 .parameters {
   margin-bottom: 27px;
 
-  &__list {
+  .parameters__list {
     display: table;
     width: 260px;
 
     @include list( );
   }
 
-  &__item {
+  .parameters__item {
     display: table-row;
 
     @include font($fs-text, bormal, 20px, $c-text);
   }
 
-  &__name,
-  &__details {
-    padding-top: 13px;
-    padding-bottom: 13px;
+  .parameters__name,
+  .parameters__details {
+    padding-top: 10px;
+    padding-bottom: 10px;
     display: table-cell;
     text-align: left;
     border-bottom: 1px solid $c-underline;
   }
 
-  &__name {
+  .parameters__name {
     width: 95px;
+  }
+
+  @media (min-width: $tablet-width) {
+    .parameters__list {
+      width: 100%;
+    }
+
+    .parameters__item {
+      width: auto;
+    }
   }
 }

@@ -1,35 +1,4 @@
 .delivery {
-  margin: 0;
-  padding-top: 23px;
-  padding-bottom: 23px;
-  padding-left: 35px;
-
   @include font($fs-text, normal, $lh-text, $c-text);
   text-align: right;
-  display: none;
-
-  @media (min-width: $tablet-width) {
-    position: absolute;
-    z-index: 1;
-    right: 0;
-    display: block;
-    margin-top: 84px;
-    padding-right: 50px;
-    order: 1;
-    width: 398px;
-    background: transparent;
-  }
-
-  @media (min-width: $desktop-width) {
-    position: absolute;
-    z-index: 1;
-    right: 0;
-    display: block;
-    margin-top: 88px;
-    padding-left: 0;
-    padding-right: 50px;
-    order: 1;
-    width: 400px;
-    background: transparent;
-  }
 }

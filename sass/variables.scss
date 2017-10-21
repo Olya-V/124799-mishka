@@ -1,5 +1,6 @@
 $tablet-width: 768px;
 $desktop-width: 1150px;
+$mobile-width-only: 767px;
 
 $c-main-white: #ffffff;
 $c-page-heading-gray: #f1f1f1;
@@ -8,10 +9,13 @@ $c-title-black: #000000;
 $c-text: #444444;
 $c-hit-label: #63d1bb;
 
+
 $c-underline: #ececec;
 
 $icon-hover: #63d1bb;
 $icon-active: transparentize($icon-hover, 0.7);
+$icon-f-hover: #46c1ae;
+$icon-f-active: transparentize($icon-f-hover, 0.7);
 
 $c-text-hover: transparentize($c-title-black, 0.4);
 $c-text-active: transparentize($c-title-black, 0.7);

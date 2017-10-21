@@ -1,42 +1,42 @@
 .reviews {
-  margin-bottom: 93px;
+  padding-bottom: 60px;
 
-  &__container {
+  .reviews__container {
     display: flex;
     flex-direction: column;
+    padding-top: 16px;
   }
 
-  &__section-title {
-    margn: 0;
+  .reviews__section-title {
+    margin: 0;
     padding: 0;
-    margin-bottom: 32px;
+    margin-bottom: 23px;
 
     @include font($fs-mobile-section-title, bold, $lh-mobile-title, $c-title-black);
   }
 
-  &__list {
+  .reviews__list {
     margin-bottom: 34px;
 
     @include list( );
   }
 
-  &__details {
+  .reviews__details {
     margin: 0;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
     padding: 0;
 
     @include font($fs-text, normal, $lh-mobile-title, $c-text);
   }
 
-  &__author {
+  .reviews__author {
     display: block;
-    margin-bottom: 12px;
 
     @include font(17px, bold, $lh-text, $c-title-black);
     font-style: normal;
   }
 
-  &__account {
+  .reviews__account {
     display: block;
     margin-bottom: 35px;
 
@@ -44,22 +44,22 @@
     font-style: normal;
   }
 
-  &__button {
+  .reviews__button {
     font-size: 18px;
   }
 
-  &__buttons {
+  .reviews__buttons {
     display: inline-flex;
-    margin-bottom: 38px;
+    margin-bottom: 34px;
   }
 
-  &__icon {
+  .reviews__icon {
     fill: $c-title-black;
   }
 
-  &__arrow-button {
+  .reviews__arrow-button {
     width: 132px;
-    padding-top: 12px;
+    padding-top: 7px;
     padding-bottom: 12px;
     background-color: $c-main-white;
     border: 1px solid $c-underline;
@@ -79,18 +79,19 @@
   }
 
   @media (min-width: $tablet-width) {
+    padding-bottom: 110px;
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
     background-position: 0 0;
 
-    &__container {
+    .reviews__container {
       position: relative;
       flex-direction: row;
       flex-wrap: wrap;
-      padding-top: 78px;
+      padding-top: 77px;
     }
 
-    &__section-title {
+    .reviews__section-title {
       order: 0;
       width: 185px;
       margin-top: 0;
@@ -100,64 +101,75 @@
       line-height: $lh-tablet-title;
     }
 
-    &__list {
+    .reviews__list {
       order: 2;
       width: 668px;
     }
 
-    &__details {
+    .reviews__details {
       margin-top: 50px;
+      margin-bottom: 56px;
       font-size: 17px;
     }
 
-    &__author {
+    .reviews__author {
+      margin-bottom: 5px;
       font-size: 18px;
     }
 
-    &__buttons {
+    .reviews__buttons {
       margin-bottom: 0;
       order: 3;
       position: absolute;
-      top: 280px;
-      left: 540px;
+      top: 361px;
+      left: 543px;
     }
 
-    &__button {
+    .reviews__button {
+      position: absolute;
       order: 1;
       width: 176px;
       font-size: 17px;
+      top: 80px;
+      left: 540px;
     }
 
-
-    &__arrow-button {
+    .reviews__arrow-button {
       border: 1px solid transparent;
-      width: 83px;
+      width: 87px;
     }
   }
 
   @media (min-width: 1150px) {
-    background-position: 100px 0;
+    padding-bottom: 160px;
+    background-position: 48px 7px;
 
-    &__container {
+    .reviews__container {
       padding-left: 225px;
     }
 
-    &__section-title {
+    .reviews__section-title {
       font-size: $fs-desktop-title;
       line-height: $lh-desktop-title;
       margin-right: 510px;
     }
 
-    &__details {
+    .reviews__details {
       width: 775px;
+      margin-bottom: 37px;
     }
 
-    &__buttons {
-      left: 920px;
-      top: 320px;
+    .reviews__button {
+      left: 923px;
+      top: 84px;
     }
 
-    &__author {
+    .reviews__buttons {
+      left: 923px;
+      top: 318px;
+    }
+
+    .reviews__author {
       font-size: 17px;
     }
   }

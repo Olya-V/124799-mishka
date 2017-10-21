@@ -4,11 +4,11 @@
   padding-top: 32px;
   padding-bottom: 46px;
 
-  &__container {
+  .modal-order__container {
     padding: 0 30px;
   }
 
-  &__section-title {
+  .modal-order__section-title {
     margin-bottom: 18px;
     padding-left: 55px;
     padding-right: 55px;
@@ -19,13 +19,13 @@
     vertical-align: middle;
   }
 
-  &__greeting {
+  .modal-order__greeting {
     @include font($fs-text, normal, $lh-mobile-title, $c-text);
     text-align: center;
     vertical-align: middle;
   }
 
-  &__options {
+  .modal-order__options {
     display: flex;
     justify-content: center;
 
@@ -33,7 +33,7 @@
     margin-bottom: 31px;
   }
 
-  &__size {
+  .modal-order__size {
     width: 82px;
     padding-top: 18px;
     padding-bottom: 18px;
@@ -56,7 +56,7 @@
     }
   }
 
-  &__button {
+  .modal-order__button {
     @include font(17px, bold, 16px, $c-main-white);
     background-color: $c-hit-label;
     border-color: $c-hit-label;
@@ -73,21 +73,21 @@
   @media (min-width: $tablet-width) {
     width: 568px;
 
-    &__container {
+    .modal-order__container {
       padding: 0 107px;
     }
 
-    &__section-title {
+    .modal-order__section-title {
       padding: 0;
 
       @include font(30px, bold, $lh-desktop-title, $c-title-black);
     }
 
-    &__greeting {
+    .modal-order__greeting {
       font-size: 17px;
     }
 
-    &__size {
+    .modal-order__size {
       width: 112px;
     }
   }
