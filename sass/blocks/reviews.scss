@@ -64,7 +64,6 @@
   width: 132px;
   padding-top: 7px;
   padding-bottom: 12px;
-  background-color: $c-main-white;
   border: 1px solid $c-underline;
   background-color: transparent;
 
@@ -105,8 +104,8 @@
 
     @media (min-resolution: $retina-dpi),
       (min-resolution: $retina-dppx) {
-        background-image: url("../img/review@2x.jpg"),
-          url("../img/bg-zigzag-line.svg");
+      background-image: url("../img/review@2x.jpg"),
+      url("../img/bg-zigzag-line.svg");
     }
   }
 
