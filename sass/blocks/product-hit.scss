@@ -1,74 +1,81 @@
 .product-hit {
   display: flex;
   flex-direction: column;
-  margin-bottom: 47px;
+  margin-bottom: 38px;
+}
+
+.product-hit__promo {
+  margin: 0;
+  margin-bottom: 14px;
+  padding: 0;
+
+  @include font($fs-text, normal, $lh-text, $c-text);
+}
+
+.product-hit__parameters {
+  @include font($fs-text, normal, 20px, $c-text);
+}
+
+.product-hit__link {
+  display: block;
+}
+
+.product-hit__cost {
+  margin-top: 19px;
+  margin-bottom: 24px;
+
+  @include font(17px, bold, $lh-text, $c-text);
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .product-hit {
+    position: relative;
+  }
 
   .product-hit__promo {
-    margin: 0;
-    margin-bottom: 14px;
-    padding: 0;
+    margin-bottom: 32px;
+    width: 290px;
 
-    @include font($fs-text, normal, $lh-text, $c-text);
+    @include font(17px, normal, $lh-mobile-title, $c-text);
   }
 
-  .product-hit__parameters {
-    @include font($fs-text, normal, 20px, $c-text);
-  }
-
-  .product-hit__link {
-    display: block;
+  .product-hit__parameters-table {
+    width: 290px;
   }
 
   .product-hit__cost {
-    margin-top: 19px;
-    margin-bottom: 24px;
-
-    @include font(17px, bold, $lh-text, $c-text);
-    text-align: center;
+    @include font(20px, bold, $lh-text, $c-text);
+    margin-top: 30px;
+    margin-bottom: 34px;
+    width: 290px;
   }
 
-  @media (min-width: $tablet-width) {
-    position: relative;
-
-    .product-hit__promo {
-      margin-bottom: 32px;
-
-      @include font(17px, normal, $lh-mobile-title, $c-text);
-    }
-
-    .product-hit__cost {
-      @include font(20px, bold, $lh-text, $c-text);
-      margin-top: 30px;
-      margin-bottom: 34px;
-    }
-
-    .product-hit__link {
-      position: absolute;
-      right: -377px;
-      top: 57px;
-      width: 333px;
-      height: 404px;
-      background-color: yellow;
-    }
+  .product-hit__link {
+    order: 1;
+    width: 333px;
+    height: 404px;
   }
 
-  @media (min-width: $desktop-width) {
-    .product-hit__link {
-      position: absolute;
-      right: -580px;
-      top: -111px;
-      width: 525px;
-      height: 636px;
-      background-color: yellow;
-    }
+  .product-hit__button {
+    width: 290px;
+  }
+}
 
-    .product-hit__promo {
-      margin-bottom: 47px;
-    }
+@media (min-width: $desktop-width) {
+  .product-hit__link {
+    z-index: 1;
+    margin-top: -163px;
+    width: 525px;
+    height: 636px;
+  }
 
-    .product-hit__cost {
-      margin-top: 80px;
-      margin-bottom: 33px;
-    }
+  .product-hit__promo {
+    margin-bottom: 47px;
+  }
+
+  .product-hit__cost {
+    margin-top: 80px;
+    margin-bottom: 33px;
   }
 }

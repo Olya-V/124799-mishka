@@ -1,89 +1,107 @@
-.week-hit {
+.week-hit__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../img/bg-zigzag-line.svg");
+  padding: 0 9.37%;
+  margin: 0 auto;
+  background-repeat: repeat-x;
+  background-position: bottom;
+  background-size: auto 6px;
+}
+
+.week-hit__title {
+  margin-bottom: 5px;
+
+  @include font(25px, bold, $lh-mobile-title, $c-title-black);
+}
+
+.week-hit__label {
+  @include font(17px, bold, 20px, $c-hit-label);
+  text-transform: uppercase;
+  margin-bottom: 26px;
+  width: auto;
+}
+
+.week-hit__description {
+  width: 260px;
+}
+
+@media (min-width: $tablet-width) {
   .week-hit__container {
-    display: flex;
-    flex-direction: column;
+    padding: 0 6.5%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 33px;
+    padding-bottom: 30px;
+    background-size: auto 17px;
   }
 
   .week-hit__title {
-    margin-bottom: 5px;
-
-    @include font(25px, bold, $lh-mobile-title, $c-title-black);
+    width: 430px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 136px;
+    font-size: $fs-tablet-title;
+    line-height: $lh-tablet-title;
   }
 
   .week-hit__label {
-    @include font(17px, bold, 20px, $c-hit-label);
-    text-transform: uppercase;
-    margin-bottom: 26px;
-    width: auto;
+    width: 80px;
+    margin-bottom: 0;
+    padding-top: 10px;
+    line-height: 17px;
+    text-align: center;
   }
 
   .week-hit__description {
-    width: 260px;
+    padding-top: 50px;
+    width: 668px;
+    height: 464px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .week-hit {
+    padding-bottom: 0;
   }
 
-  @media (min-width: $tablet-width) {
-    padding-bottom: 30px;
-
-    .week-hit__container {
-      flex-direction: row;
-      flex-wrap: wrap;
-      width: 768px;
-      padding-top: 44px;
-    }
-
-    .week-hit__title {
-      width: 430px;
-      margin-top: 0;
-      margin-bottom: 0;
-      margin-right: 140px;
-      font-size: $fs-tablet-title;
-      line-height: $lh-tablet-title;
-    }
-
-    .week-hit__label {
-      width: 80px;
-      margin-bottom: 0;
-      padding-top: 10px;
-      line-height: 17px;
-      text-align: center;
-    }
-
-    .week-hit__description {
-      width: 290px;
-      padding-top: 50px;
-    }
+  .week-hit__container {
+    width: 1050px;
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 112px;
+    padding-bottom: 56px;
+    background-size: auto 23px;
   }
 
-  @media (min-width: $desktop-width) {
-    padding-bottom: 60px;
+  .week-hit__title {
+    z-index: 2;
+    order: 1;
+    width: 875px;
+    position: relative;
+    font-size: $fs-desktop-title;
+    line-height: $lh-desktop-title;
+    margin-right: 0;
+  }
 
-    .week-hit__container {
-      width: 1150px;
-      padding-top: 110px;
-    }
+  .week-hit__label {
+    order: 0;
+    width: 168px;
+    padding: 0 30px;
+    padding-top: 13px;
+  }
 
-    .week-hit__title {
-      z-index: 2;
-      order: 1;
-      width: 875px;
-      position: relative;
-      font-size: $fs-desktop-title;
-      line-height: $lh-desktop-title;
-      margin-right: 0;
-    }
-
-    .week-hit__label {
-      order: 0;
-      width: 168px;
-      padding: 0 30px;
-      padding-top: 13px;
-    }
-
-    .week-hit__description {
-      order: 2;
-      width: 467px;
-      padding-top: 48px;
-      padding-left: 175px;
-    }
+  .week-hit__description {
+    order: 2;
+    width: 100%;
+    height: 526px;
+    padding-top: 48px;
+    padding-left: 175px;
   }
 }

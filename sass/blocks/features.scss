@@ -1,125 +1,130 @@
-.features {
+.features__container {
+  padding-top: 9px;
+  padding-bottom: 6px;
+}
+
+.features__section-title {
+  @include font($fs-mobile-section-title, bold, $lh-mobile-title, $c-title-black);
+  margin-bottom: 30px;
+}
+
+.features__list {
+  @include list( );
+  display: flex;
+  flex-direction: column;
+}
+
+.features__item {
+  flex-basis: 100px;
+  margin-bottom: 24px;
+  padding-top: 55px;
+  background-repeat: no-repeat;
+  background-position: 6px 2px;
+
+  &--narrow {
+    width: 200px;
+    padding-top: 55px;
+    background-position: 7px 3px;
+  }
+
+  &--wide {
+    width: 250px;
+    padding-top: 50px;
+    background-position: 1px 0;
+  }
+
+  &--materials {
+    background-image: url("../img/icon-feature-flower.svg");
+  }
+
+  &--style {
+    background-image: url("../img/icon-feature-money.svg");
+  }
+
+  &--likes {
+    background-image: url("../img/icon-feature-heart.svg");
+  }
+
+  &--knitting {
+    background-image: url("../img/icon-feature-ball.svg");
+  }
+
+  &--domestic-manufacturer {
+    background-image: url("../img/icon-feature-rocket.svg");
+  }
+
+  &--present-package {
+    background-image: url("../img/icon-feature-gift.svg");
+  }
+}
+
+.features__details {
+  @include font(17px, bold, 20px, $c-title-black);
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .features {
+    margin-bottom: 64px;
+  }
+
   .features__section-title {
-    @include font($fs-mobile-section-title, bold, $lh-mobile-title, $c-title-black);
-    margin-bottom: 30px;
+    font-size: $fs-tablet-title;
+    line-height: $lh-tablet-title;
+    margin-top: 38px;
+    margin-bottom: 50px;
   }
 
   .features__list {
-    @include list( );
-    display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    height: 420px;
+    width: 668px;
   }
 
   .features__item {
-    flex-basis: 100px;
-    margin-bottom: 25px;
-    padding-top: 55px;
-    background-repeat: no-repeat;
-    background-position: 6px 2px;
+    flex-basis: 105px;
+    padding-right: 0;
+
 
     &--narrow {
-      width: 200px;
-      padding-top: 55px;
-      background-position: 7px 3px;
+      width: 239px;
+      margin-bottom: 50px;
+      margin-right: 53px;
     }
 
     &--wide {
-      width: 250px;
-      padding-top: 50px;
-      background-position: 1px 0;
+      width: 295px;
+      margin-bottom: 52px;
     }
+  }
 
-    &--materials {
-      background-image: url("../img/icon-feature-flower.svg");
-    }
-
-    &--style {
-      background-image: url("../img/icon-feature-money.svg");
-    }
-
-    &--likes {
-      background-image: url("../img/icon-feature-heart.svg");
-    }
-
-    &--knitting {
-      background-image: url("../img/icon-feature-ball.svg");
-    }
-
-    &--domestic-manufacturer {
-      background-image: url("../img/icon-feature-rocket.svg");
-    }
-
-    &--present-package {
-      background-image: url("../img/icon-feature-gift.svg");
-    }
+  .features__item:nth-child(3n) {
+    margin-bottom: 0;
   }
 
   .features__details {
-    @include font(17px, bold, 20px, $c-title-black);
-    margin: 0;
+    @include font(20px, bold, 22px, $c-title-black);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features__container {
+    padding-left: 220px;
+    padding-top: 22px;
   }
 
-  @media (min-width: $tablet-width) {
-    margin-bottom: 70px;
-
-    .features__section-title {
-      font-size: $fs-tablet-title;
-      line-height: $lh-tablet-title;
-      margin-top: 38px;
-      margin-bottom: 50px;
-    }
-
-    .features__list {
-      flex-wrap: wrap;
-      height: 420px;
-      width: 668px;
-    }
-
-    .features__item {
-      flex-basis: 105px;
-      padding-right: 0;
-
-
-      &--narrow {
-        width: 239px;
-        margin-bottom: 50px;
-        margin-right: 53px;
-      }
-
-      &--wide {
-        width: 295px;
-        margin-bottom: 52px;
-      }
-    }
-
-    .features__item:nth-child(3n) {
-      margin-bottom: 0;
-    }
-
-    .features__details {
-      @include font(20px, bold, 22px, $c-title-black);
-    }
+  .features__section-title {
+    font-size: $fs-desktop-title;
+    line-height: $lh-desktop-title;
   }
 
-  @media (min-width: $desktop-width) {
-    .features__container {
-      padding-left: 220px;
-      padding-top: 10px;
-    }
+  .features__list {
+    padding-rigth: 170px;
+  }
 
-    .features__section-title {
-      font-size: $fs-desktop-title;
-      line-height: $lh-desktop-title;
-    }
-
-    .features__list {
-      padding-rigth: 170px;
-    }
-
-    .features__item {
-      &--narrow {
-        margin-right: 93px;
-      }
+  .features__item {
+    &--narrow {
+      margin-right: 93px;
     }
   }
 }
