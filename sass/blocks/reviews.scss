@@ -1,11 +1,13 @@
-.reviews {
-  padding-bottom: 60px;
-}
-
 .reviews__container {
   display: flex;
   flex-direction: column;
+  padding: 0 30px;
   padding-top: 16px;
+  padding-bottom: 50px;
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-repeat: repeat-x;
+  background-position: bottom;
+  background-size: auto 6px;
 }
 
 .reviews__section-title {
@@ -24,7 +26,7 @@
 
 .reviews__details {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
   padding: 0;
 
   @include font($fs-text, normal, $lh-mobile-title, $c-text);
@@ -64,6 +66,7 @@
   padding-bottom: 12px;
   background-color: $c-main-white;
   border: 1px solid $c-underline;
+  background-color: transparent;
 
   &:hover,
   &:focus {
@@ -81,17 +84,30 @@
 
 @media (min-width: $tablet-width) {
   .reviews {
-    padding-bottom: 110px;
-    background-image: url("../img/review@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
+    padding-bottom: 0;
   }
 
   .reviews__container {
     position: relative;
     flex-direction: row;
     flex-wrap: wrap;
+    padding: 0 50px;
     padding-top: 77px;
+    padding-bottom: 95px;
+    background-image: url("../img/review@1x.jpg"),
+      url("../img/bg-zigzag-line.svg");
+    background-repeat: no-repeat,
+      repeat-x;
+    background-position: 0 0,
+      bottom;
+    background-size: 350px auto,
+      auto 17px;
+
+    @media (min-resolution: $retina-dpi),
+      (min-resolution: $retina-dppx) {
+        background-image: url("../img/review@2x.jpg"),
+          url("../img/bg-zigzag-line.svg");
+    }
   }
 
   .reviews__section-title {
@@ -141,24 +157,36 @@
 }
 
 @media (min-width: 1150px) {
-  .reviews {
-    padding-bottom: 160px;
-    background-position: 48px 7px;
-  }
-
   .reviews__container {
-    padding-left: 225px;
+    width: 1150px;
+    margin: 0 auto;
+    padding-left: 220px;
+    padding-bottom: 148px;
+
+    background-position: 48px 7px,
+       bottom;
+    background-size: 350px auto,
+      auto 23px;
   }
 
   .reviews__section-title {
     font-size: $fs-desktop-title;
     line-height: $lh-desktop-title;
-    margin-right: 510px;
+    margin-right: 518px;
+  }
+
+
+  .reviews__list {
+    width: 775px;
   }
 
   .reviews__details {
     width: 775px;
     margin-bottom: 37px;
+  }
+
+  .reviews__button {
+    margin-top: 8px;
   }
 
   .reviews__buttons {

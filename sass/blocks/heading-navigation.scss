@@ -89,6 +89,12 @@
     width: 50%;
   }
 
+  .heading-navigation__link {
+    padding-bottom: 40px;
+    padding-top: 28px;
+    padding-left: 35px;
+  }
+
   .heading-navigation__name {
     @include font(20px, bold, $lh-mobile-title, $c-main-white);
   }
@@ -102,9 +108,7 @@
   .heading-navigation__link {
     &:hover,
     &:focus {
-      transform: scaleY(1.048);
-      padding-top: 20px;
-      padding-bottom: 22px;
+      transform: translateY(-5px);
     }
   }
 }

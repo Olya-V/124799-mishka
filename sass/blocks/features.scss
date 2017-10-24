@@ -1,3 +1,8 @@
+.features__container {
+  padding-top: 9px;
+  padding-bottom: 6px;
+}
+
 .features__section-title {
   @include font($fs-mobile-section-title, bold, $lh-mobile-title, $c-title-black);
   margin-bottom: 30px;
@@ -11,7 +16,7 @@
 
 .features__item {
   flex-basis: 100px;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
   padding-top: 55px;
   background-repeat: no-repeat;
   background-position: 6px 2px;
@@ -60,7 +65,7 @@
 
 @media (min-width: $tablet-width) {
   .features {
-    margin-bottom: 70px;
+    margin-bottom: 64px;
   }
 
   .features__section-title {
@@ -105,7 +110,7 @@
 @media (min-width: $desktop-width) {
   .features__container {
     padding-left: 220px;
-    padding-top: 10px;
+    padding-top: 22px;
   }
 
   .features__section-title {

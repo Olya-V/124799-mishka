@@ -1,5 +1,5 @@
 .contacts {
-  padding-top: 25px;
+  padding-top: 35px;
   padding-bottom: 39px;
 }
 
@@ -10,6 +10,12 @@
     background-image: url("../img/map-mobile@1x.jpg");
     background-repeat: no-repeat;
     height: 457px;
+
+    @media (min-resolution: $retina-dpi),
+      (min-resolution: $retina-dppx) {
+        background-image: url("../img/map-mobile@2x.jpg");
+        background-size: 100% auto;
+    }
   }
 }
 
@@ -77,6 +83,7 @@
 
 @media (min-width: $tablet-width) {
   .contacts {
+    padding-top: 40px;
     margin-bottom: 17px;
   }
 
@@ -90,7 +97,13 @@
 
     &--map {
       margin-bottom: 54px;
-      background-image: url("../img/map-tablet.jpg");
+      background-image: url("../img/map-tablet@1x.jpg");
+
+      @media (min-resolution: $retina-dpi),
+        (min-resolution: $retina-dppx) {
+          background-image: url("../img/map-tablet@2x.jpg");
+          background-size: 100% auto;
+      }
     }
 
     &--button {
@@ -139,30 +152,49 @@
 
 @media (min-width: $desktop-width) {
   .contacts {
+    width: 1150px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    position: relative;
-    margin-bottom: 65px;
+    flex-wrap: wrap;
+    height: 580px;
+    align-content: space-between;
+    margin-bottom: 53px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 
   .contacts__container {
     &--details {
+      width: 525px;
+      margin: 0;
+      padding-right: 0;
       padding-top: 105px;
-      padding-left: 220px;
-      background-position: 10% 27%;
+      padding-left: 170px;
+      background-position: 13% 27%;
     }
 
     &--map {
-      position: absolute;
-      left: 49.5%;
-      top: 60px;
-      width: 527px;
+      width: 525px;
+      order: 1;
       height: 457px;
+      margin: 0;
+      margin-top: 34px;
+      background-image: url("../img/map-desktop@1x.jpg");
+      background-size: 525px auto;
+
+      @media (min-resolution: $retina-dpi),
+        (min-resolution: $retina-dppx) {
+          background-image: url("../img/map-desktop@2x.jpg");
+      }
     }
 
     &--button {
+      width: 525px;
+      margin: 0;
       text-align: left;
-      padding-left: 225px;
+      padding-left: 170px;
+      padding-right: 0;
     }
   }
 
@@ -174,5 +206,9 @@
   .contacts__list {
     flex-direction: column;
     margin-bottom: 50px;
+  }
+
+   .contacts__details {
+    margin-bottom: 0;
   }
 }
