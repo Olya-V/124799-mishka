@@ -3,92 +3,94 @@
   width: 320px;
   padding-top: 32px;
   padding-bottom: 46px;
+}
+
+.modal-order__container {
+  padding: 0 30px;
+}
+
+.modal-order__section-title {
+  margin-bottom: 18px;
+  padding-left: 55px;
+  padding-right: 55px;
+
+  @include font($fs-mobile-section-title, bold, $lh-mobile-title, $c-title-black);
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.modal-order__greeting {
+  @include font($fs-text, normal, $lh-mobile-title, $c-text);
+  text-align: center;
+  vertical-align: middle;
+}
+
+.modal-order__options {
+  display: flex;
+  justify-content: center;
+
+  @include list( );
+  margin-bottom: 31px;
+}
+
+.modal-order__size {
+  width: 82px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  margin-right: 7px;
+
+  @include font(17px, bold, 16px, $c-text);
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+  border: 2px solid transparentize($c-text, 0.9);
+
+
+  &:hover,
+  &:focus {
+    border: 2px solid transparentize($c-text, 0.7);
+  }
+
+  &:active {
+    border: 2px solid #62d1ba;
+  }
+}
+
+.modal-order__button {
+  @include font(17px, bold, 16px, $c-main-white);
+  background-color: $c-hit-label;
+  border-color: $c-hit-label;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $c-main-white;
+    background-color: $c-hit-label;
+    border-color: $c-hit-label;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .modal-order {
+    width: 568px;
+  }
 
   .modal-order__container {
-    padding: 0 30px;
+    padding: 0 107px;
   }
 
   .modal-order__section-title {
-    margin-bottom: 18px;
-    padding-left: 55px;
-    padding-right: 55px;
+    padding: 0;
 
-    @include font($fs-mobile-section-title, bold, $lh-mobile-title, $c-title-black);
-    text-transform: uppercase;
-    text-align: center;
-    vertical-align: middle;
+    @include font(30px, bold, $lh-desktop-title, $c-title-black);
   }
 
   .modal-order__greeting {
-    @include font($fs-text, normal, $lh-mobile-title, $c-text);
-    text-align: center;
-    vertical-align: middle;
-  }
-
-  .modal-order__options {
-    display: flex;
-    justify-content: center;
-
-    @include list( );
-    margin-bottom: 31px;
+    font-size: 17px;
   }
 
   .modal-order__size {
-    width: 82px;
-    padding-top: 18px;
-    padding-bottom: 18px;
-    margin-right: 7px;
-
-    @include font(17px, bold, 16px, $c-text);
-    text-transform: uppercase;
-    text-align: center;
-    vertical-align: middle;
-    border: 2px solid transparentize($c-text, 0.9);
-
-
-    &:hover,
-    &:focus {
-      border: 2px solid transparentize($c-text, 0.7);
-    }
-
-    &:active {
-      border: 2px solid #62d1ba;
-    }
-  }
-
-  .modal-order__button {
-    @include font(17px, bold, 16px, $c-main-white);
-    background-color: $c-hit-label;
-    border-color: $c-hit-label;
-
-    &:hover,
-    &:focus,
-    &:active {
-      color: $c-main-white;
-      background-color: $c-hit-label;
-      border-color: $c-hit-label;
-    }
-  }
-
-  @media (min-width: $tablet-width) {
-    width: 568px;
-
-    .modal-order__container {
-      padding: 0 107px;
-    }
-
-    .modal-order__section-title {
-      padding: 0;
-
-      @include font(30px, bold, $lh-desktop-title, $c-title-black);
-    }
-
-    .modal-order__greeting {
-      font-size: 17px;
-    }
-
-    .modal-order__size {
-      width: 112px;
-    }
+    width: 112px;
   }
 }

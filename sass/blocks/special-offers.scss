@@ -1,27 +1,25 @@
-.special-offers {
+.special-offers__list {
+  @include list( );
+}
+
+.special-offers__link {
+  display: block;
+  padding-top: 23px;
+  padding-bottom: 23px;
+
+  @include font($fs-text, bold, $lh-text, $c-title-black);
+  @include link( );
+}
+
+@media (min-width: $desktop-width) {
   .special-offers__list {
-    @include list( );
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
   }
 
   .special-offers__link {
-    display: block;
-    padding-top: 23px;
-    padding-bottom: 23px;
-
-    @include font($fs-text, bold, $lh-text, $c-title-black);
-    @include link( );
-  }
-
-  @media (min-width: $desktop-width) {
-    .special-offers__list {
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
-    }
-
-    .special-offers__link {
-      width: 218px;
-      padding-top: 17px;
-    }
+    width: 218px;
+    padding-top: 17px;
   }
 }
