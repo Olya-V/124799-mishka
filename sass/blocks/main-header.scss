@@ -195,6 +195,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .main-header {
+    border-bottom: 1px solid $c-underline;
+  }
+
   .main-header__container {
     width: 1150px;
     margin: 0 auto;
@@ -210,8 +214,8 @@
     width: 466px;
     height: inherit;
     background: $c-main-white;
-    border-bottom: 1px solid $c-underline;
     align-self: flex-start;
+    border-bottom: 1px solid $c-underline;
   }
 
   .main-header__logo {
