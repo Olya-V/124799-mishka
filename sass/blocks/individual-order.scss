@@ -92,7 +92,7 @@
 
   &:hover,
   &:focus {
-    .individual-order__path {
+    .individual-order__icon {
       fill: #62d1ba;
     }
   }
@@ -149,6 +149,7 @@
 
 .individual-order__icon {
   position: absolute;
+  fill: rgba(0, 0, 0, 0.2);
 
   &--tel {
     top: 17px;
