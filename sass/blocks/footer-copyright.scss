@@ -3,15 +3,17 @@
 
   &:hover,
   &:focus {
-    .footer-copyright__icon {
+    .footer-copyright__logo {
       fill: $icon-f-hover;
     }
   }
 
   &:active {
-    color: $c-text-active;
+    .footer-copyright__details {
+      color: $c-text-active;
+    }
 
-    .footer-copyright__icon {
+    .footer-copyright__logo {
       fill: $icon-f-active;
     }
   }
@@ -31,9 +33,6 @@
 .footer-copyright__logo {
   margin-top: 22px;
   margin-bottom: 20px;
-}
-
-.footer-copyright__icon {
   fill: $c-hit-label;
 }
 
