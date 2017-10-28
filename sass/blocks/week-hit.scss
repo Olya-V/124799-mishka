@@ -1,7 +1,6 @@
 .week-hit__container {
   display: flex;
   flex-direction: column;
-  align-items: center;
   background-image: url("../img/bg-zigzag-line.svg");
   padding: 0 9.37%;
   margin: 0 auto;
@@ -29,6 +28,7 @@
 
 @media (min-width: $tablet-width) {
   .week-hit__container {
+    align-items: center;
     padding: 0 6.5%;
     flex-direction: row;
     flex-wrap: wrap;
