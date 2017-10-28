@@ -1,7 +1,6 @@
 var open = document.querySelector(".product-hit__button");
 var popup = document.querySelector(".modal-order");
-var close = popup.querySelector(".modal-order__button");
-var size = popup.querySelector(".modal-order__size");
+var size = popup.querySelector(".modal-order__radio");
 
 open.addEventListener("click", function (evt) {
   evt.preventDefault();
@@ -9,10 +8,6 @@ open.addEventListener("click", function (evt) {
   size.focus();
 });
 
-close.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  popup.classList.remove("modal-order-open");
-});
 
 window.addEventListener("keydown", function (evt) {
 if (evt.keyCode === 27) {

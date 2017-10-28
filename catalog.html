@@ -198,16 +198,39 @@
     </main>
     <div class="modal-order">
       <div class="modal-order__container">
-        <h2 class="section-title modal-order__section-title">Добавить в корзину</h2>
-        <p class="modal-order__greeting">Выберите размер:</p>
-        <ul class="modal-order__options">
-          <li class="modal-order__size">S</li>
-          <li class="modal-order__size">M</li>
-          <li class="modal-order__size">L</li>
-        </ul>
-        <a class="button modal-order__button" href="cart.html">
-          Добавить
-        </a>
+        <h2 class="modal-order__section-title">Добавить в корзину</h2>
+        <form class="modal-order__form">
+          <p class="modal-order__greeting">Выберите размер:</p>
+          <ul class="modal-order__options">
+            <li class="modal-order__item">
+              <label class="modal-order__option" for="size-s">
+                <input class="modal-order__field visually-hidden" type="radio" name="size" id="size-s" value="size-s">
+                <span class="modal-order__radio">
+                  s
+                </span>
+              </label>
+            </li>
+            <li class="modal-order__item">
+              <label class="modal-order__option" for="size-m">
+                <input class="modal-order__field visually-hidden" type="radio" name="size" id="size-m" value="size-m">
+                <span class="modal-order__radio">
+                  m
+                </span>
+              </label>
+            </li>
+            <li class="modal-order__item">
+              <label class="modal-order__option" for="size-l">
+                <input class="modal-order__field visually-hidden" type="radio" name="size" id="size-l" value="size-l">
+                <span class="modal-order__radio">
+                  l
+                </span>
+              </label>
+            </li>
+          </ul>
+          <button class="button modal-order__button" type="submit">
+            Добавить
+          </button>
+        </form>
       </div>
     </div>
     <footer class="main-footer">

@@ -36,7 +36,7 @@
 }
 
 .modal-order__section-title {
-  margin-bottom: 18px;
+  margin: 0;
   padding-left: 55px;
   padding-right: 55px;
 
@@ -47,6 +47,9 @@
 }
 
 .modal-order__greeting {
+  margin-top: 10px;
+  margin-bottom: 23px;
+
   @include font($fs-text, normal, $lh-mobile-title, $c-text);
   text-align: center;
   vertical-align: middle;
@@ -57,30 +60,41 @@
   justify-content: center;
 
   @include list( );
-  margin-bottom: 31px;
+  margin-bottom: 33px;
 }
 
-.modal-order__size {
-  width: 82px;
-  padding-top: 18px;
-  padding-bottom: 18px;
+.modal-order__item {
   margin-right: 7px;
+}
+
+.modal-order__field + .modal-order__radio {
+  display: block;
+  width: 82px;
+  height: 52px;
+  padding-top: 17px;
+  padding-bottom: 18px;
 
   @include font(17px, bold, 16px, $c-text);
   text-transform: uppercase;
   text-align: center;
   vertical-align: middle;
   border: 2px solid transparentize($c-text, 0.9);
+}
 
+.modal-order__field:hover + .modal-order__radio {
+  border: 2px solid transparentize($c-text, 0.7);
+}
 
-  &:hover,
-  &:focus {
-    border: 2px solid transparentize($c-text, 0.7);
-  }
+.modal-order__field:focus + .modal-order__radio {
+  outline: 5px auto -webkit-focus-ring-color;
+}
 
-  &:active {
-    border: 2px solid #62d1ba;
-  }
+.modal-order__field:disabled + .modal-order__radio {
+  border: 2px solid transparentize($c-text, 0.7);
+}
+
+.modal-order__field:checked + .modal-order__radio {
+  border: 2px solid #62d1ba;
 }
 
 .modal-order__button {
@@ -116,7 +130,7 @@
     font-size: 17px;
   }
 
-  .modal-order__size {
+  .modal-order__field + .modal-order__radio {
     width: 112px;
   }
 }

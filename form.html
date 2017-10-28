@@ -96,128 +96,140 @@
           </p>
           <form class="individual-order__form" action="https://echo.htmlacademy.ru" method="post">
             <div class="individual-order__section individual-order__section--type">
-              <div class="individual-order__type">
-                Тип
+              <div class="individual-order__wrapper">
+                <div class="individual-order__type">
+                  Тип
+                </div>
+                <ul class="individual-order__options">
+                  <li class="individual-order__item individual-order__item--type">
+                    <label class="individual-order__option individual-order__option--type" for="interior">
+                      <input class="individual-order__field visually-hidden" type="radio" name="type" id="interior" value="accessories" checked>
+                      <span class="individual-order__radio"></span>
+                      Аксессуар для интерьера
+                    </label>
+                  </li>
+                  <li class="individual-order__item individual-order__item--type">
+                    <label class="individual-order__option individual-order__option--type" for="toy">
+                      <input class="individual-order__field visually-hidden" type="radio" name="type" id="toy" value="toy">
+                      <span class="individual-order__radio"></span>
+                      Детская игрушка
+                    </label>
+                  </li>
+                </ul>
               </div>
-              <ul class="individual-order__options">
-                <li class="individual-order__item individual-order__item--type">
-                  <label class="individual-order__option individual-order__option--type" for="interior">
-                    <input class="individual-order__field visually-hidden" type="radio" name="type" id="interior" value="accessories" checked>
-                    <span class="individual-order__radio"></span>
-                    Аксессуар для интерьера
-                  </label>
-                </li>
-                <li class="individual-order__item individual-order__item--type">
-                  <label class="individual-order__option individual-order__option--type" for="toy">
-                    <input class="individual-order__field visually-hidden" type="radio" name="type" id="toy" value="toy">
-                    <span class="individual-order__radio"></span>
-                    Детская игрушка
-                  </label>
-                </li>
-              </ul>
             </div>
             <div class="individual-order__section individual-order__section--color individual-order__section--gray">
-              <div class="individual-order__type">
-                Цвет
+              <div class="individual-order__wrapper">
+                <div class="individual-order__type">
+                  Цвет
+                </div>
+                <ul class="individual-order__options individual-order__options--color">
+                  <li class="individual-order__item individual-order__item--color">
+                    <label class="individual-order__option individual-order__option--color" for="white">
+                      <input class="individual-order__field visually-hidden" type="checkbox" name="white" id="white" checked>
+                      <span class="individual-order__checkbox"></span>
+                      Белый
+                    </label>
+                  </li>
+                  <li class="individual-order__item individual-order__item--color">
+                    <label class="individual-order__option individual-order__option--color" for="gray">
+                      <input class="individual-order__field visually-hidden" type="checkbox" name="gray" id="gray" checked>
+                      <span class="individual-order__checkbox"></span>
+                      Серый
+                    </label>
+                  </li>
+                  <li class="individual-order__item individual-order__item--color">
+                    <label class="individual-order__option individual-order__option--color" for="tiffany">
+                      <input class="individual-order__field visually-hidden" type="checkbox" name="tiffany" id="tiffany">
+                      <span class="individual-order__checkbox"></span>
+                      «Тиффани»
+                    </label>
+                  </li>
+                  <li class="individual-order__item individual-order__item--color">
+                    <label class="individual-order__option individual-order__option--color" for="black">
+                      <input class="individual-order__field visually-hidden" type="checkbox" name="black" id="black">
+                      <span class="individual-order__checkbox"></span>
+                      Черный
+                    </label>
+                  </li>
+                  <li class="individual-order__item individual-order__item--color">
+                    <label class="individual-order__option individual-order__option--color" for="pink">
+                      <input class="individual-order__field visually-hidden" type="checkbox" name="pink" id="pink">
+                      <span class="individual-order__checkbox"></span>
+                      Розовый
+                    </label>
+                  </li>
+                  <li class="individual-order__item individual-order__item--color">
+                    <label class="individual-order__option individual-order__option--color" for="orange">
+                      <input class="individual-order__field visually-hidden" type="checkbox" name="orange" id="orange">
+                      <span class="individual-order__checkbox"></span>
+                      Оранжевый
+                    </label>
+                  </li>
+                </ul>
               </div>
-              <ul class="individual-order__options individual-order__options--color">
-                <li class="individual-order__item individual-order__item--color">
-                  <label class="individual-order__option individual-order__option--color" for="white">
-                    <input class="individual-order__field visually-hidden" type="checkbox" name="white" id="white" checked>
-                    <span class="individual-order__checkbox"></span>
-                    Белый
-                  </label>
-                </li>
-                <li class="individual-order__item individual-order__item--color">
-                  <label class="individual-order__option individual-order__option--color" for="gray">
-                    <input class="individual-order__field visually-hidden" type="checkbox" name="gray" id="gray" checked>
-                    <span class="individual-order__checkbox"></span>
-                    Серый
-                  </label>
-                </li>
-                <li class="individual-order__item individual-order__item--color">
-                  <label class="individual-order__option individual-order__option--color" for="tiffany">
-                    <input class="individual-order__field visually-hidden" type="checkbox" name="tiffany" id="tiffany">
-                    <span class="individual-order__checkbox"></span>
-                    «Тиффани»
-                  </label>
-                </li>
-                <li class="individual-order__item individual-order__item--color">
-                  <label class="individual-order__option individual-order__option--color" for="black">
-                    <input class="individual-order__field visually-hidden" type="checkbox" name="black" id="black">
-                    <span class="individual-order__checkbox"></span>
-                    Черный
-                  </label>
-                </li>
-                <li class="individual-order__item individual-order__item--color">
-                  <label class="individual-order__option individual-order__option--color" for="pink">
-                    <input class="individual-order__field visually-hidden" type="checkbox" name="pink" id="pink">
-                    <span class="individual-order__checkbox"></span>
-                    Розовый
-                  </label>
-                </li>
-                <li class="individual-order__item individual-order__item--color">
-                  <label class="individual-order__option individual-order__option--color" for="orange">
-                    <input class="individual-order__field visually-hidden" type="checkbox" name="orange" id="orange">
-                    <span class="individual-order__checkbox"></span>
-                    Оранжевый
-                  </label>
-                </li>
-              </ul>
             </div>
             <div class="individual-order__section individual-order__section--name">
-              <div class="individual-order__type">
-                Фио
+              <div class="individual-order__wrapper">
+                <div class="individual-order__type">
+                  Фио
+                </div>
+                <ul class="individual-order__options individual-order__options--name">
+                  <li class="individual-order__item individual-order__item--name">
+                    <label class="individual-order__option" for="first-name">
+                      <span class="individual-order__name">Имя:</span>
+                      <input class="individual-order__field individual-order__field--name" type="text" name="first-name" id="first-name" placeholder="Введите ваше имя *" required>
+                    </label>
+                  </li>
+                  <li class="individual-order__item individual-order__item--name">
+                    <label class="individual-order__option" for="last-name">
+                      <span class="individual-order__name">Фамилия:</span>
+                      <input class="individual-order__field individual-order__field--name" type="text" name="last-name" id="last-name" placeholder="Укажите фамилию *" required>
+                    </label>
+                  </li>
+                  <li class="individual-order__item individual-order__item--name">
+                    <label class="individual-order__option" for="middle-name">
+                      <span class="individual-order__name">Отчество:</span>
+                      <input class="individual-order__field individual-order__field--name" type="text" name="middle-name" id="middle-name" placeholder="Отчество, если желаете">
+                    </label>
+                  </li>
+                </ul>
               </div>
-              <ul class="individual-order__options individual-order__options--name">
-                <li class="individual-order__item individual-order__item--name">
-                  <label class="individual-order__option" for="first-name">
-                    <span class="individual-order__name">Имя:</span>
-                    <input class="individual-order__field individual-order__field--name" type="text" name="first-name" id="first-name" placeholder="Введите ваше имя *" required>
-                  </label>
-                </li>
-                <li class="individual-order__item individual-order__item--name">
-                  <label class="individual-order__option" for="last-name">
-                    <span class="individual-order__name">Фамилия:</span>
-                    <input class="individual-order__field individual-order__field--name" type="text" name="last-name" id="last-name" placeholder="Укажите фамилию *" required>
-                  </label>
-                </li>
-                <li class="individual-order__item individual-order__item--name">
-                  <label class="individual-order__option" for="middle-name">
-                    <span class="individual-order__name">Отчество:</span>
-                    <input class="individual-order__field individual-order__field--name" type="text" name="middle-name" id="middle-name" placeholder="Отчество, если желаете">
-                  </label>
-                </li>
-              </ul>
             </div>
             <div class="individual-order__section individual-order__section--tel individual-order__section--gray">
-              <div class="individual-order__type">
-                Тел
+              <div class="individual-order__wrapper">
+                <div class="individual-order__type">
+                  Тел
+                </div>
+                <label class="individual-order__option" for="tel">
+                  <span  class="visually-hidden">Ваш телефон</span>
+                  <input class="individual-order__field individual-order__field--tel"  type="tel" name="tel" id="tel" placeholder="+7 ХХХ ХХ ХХ*" required>
+                  <svg class="individual-order__icon individual-order__icon--tel" width="24.829" height="24.333"><use xlink:href="#icon-phone"></use></svg>
+                </label>
               </div>
-              <label class="individual-order__option" for="tel">
-                <span  class="visually-hidden">Ваш телефон</span>
-                <input class="individual-order__field individual-order__field--tel"  type="tel" name="tel" id="tel" placeholder="+7 ХХХ ХХ ХХ*" required>
-                <svg class="individual-order__icon individual-order__icon--tel" width="24.829" height="24.333"><use xlink:href="#icon-phone"></use></svg>
-              </label>
             </div>
             <div class="individual-order__section individual-order__section--email  individual-order__section--gray">
-              <div class="individual-order__type">
-                E-mail
+              <div class="individual-order__wrapper">
+                <div class="individual-order__type">
+                  E-mail
+                </div>
+                <label class="individual-order__option" for="email-field" >
+                  <span  class="visually-hidden">Ваш email</span>
+                  <input class="individual-order__field individual-order__field--email" type="email" name="email" id="email-field" placeholder="Ваш Email*" required>
+                  <svg class="individual-order__icon individual-order__icon--email" width="32" height="32"><use xlink:href="#icon-mail"></use></svg>
+                </label>
               </div>
-              <label class="individual-order__option" for="email-field" >
-                <span  class="visually-hidden">Ваш email</span>
-                <input class="individual-order__field individual-order__field--email" type="email" name="email" id="email-field" placeholder="Ваш Email*" required>
-                <svg class="individual-order__icon individual-order__icon--email" width="32" height="32"><use xlink:href="#icon-mail"></use></svg>
-              </label>
             </div>
             <div class="individual-order__section individual-order__section--textarea">
-              <div class="individual-order__type">
-                Доп
+              <div class="individual-order__wrapper">
+                <div class="individual-order__type">
+                  Доп
+                </div>
+                <label class="individual-order__option" for="user-description">
+                  <span  class="visually-hidden">Ваши пожелания к заказу</span>
+                  <textarea class="individual-order__user-description" name="user-description" id="user-description" rows="6" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+                </label>
               </div>
-              <label class="individual-order__option" for="user-description">
-                <span  class="visually-hidden">Ваши пожелания к заказу</span>
-                <textarea class="individual-order__user-description" name="user-description" id="user-description" rows="6" placeholder="Опишите все ваши пожелания к заказу"></textarea>
-              </label>
             </div>
             <div class="individual-order__footer">
               <small class="individual-order__warning">*Поля обязательны для заполнения</small>
