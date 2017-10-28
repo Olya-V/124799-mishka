@@ -34,6 +34,18 @@
     height: 34px;
     margin-top: 44px;
     margin-bottom: 58px;
+
+    &--inner {
+
+      &:hover,
+      &:focus {
+        fill: $icon-f-hover;
+      }
+
+      &:active {
+        fill: $icon-f-active;
+      }
+    }
   }
 }
 
