@@ -22,13 +22,9 @@
 }
 
 .individual-order__section {
-  margin: 0 auto;
   margin-bottom: 30px;
   padding: 0;
   border: none;
-  display: flex;
-  flex-direction: column;
-  width: 260px;
 
   &--color {
     margin-bottom: 3px;
@@ -37,6 +33,13 @@
   &--textarea {
     margin-bottom: 0;
   }
+}
+
+.individual-order__wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: auto;
 }
 
 .individual-order__type {
@@ -303,17 +306,15 @@
 
   .individual-order__header {
     @include font(17px, normal, $lh-mobile-title, $c-text);
-    margin-bottom: 15px;
+    padding-bottom: 15px;
     padding-top: 11px;
     padding-right: 50px;
     padding-left: 50px;
+    width: 768px;
+    margin: 0 auto;
   }
 
   .individual-order__section {
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: baseline;
-    width: 100%;
     padding-top: 50px;
     padding-right: 5.8%;
     padding-left: 6.5%;
@@ -350,6 +351,11 @@
     &--textarea {
       padding-bottom: 17px;
     }
+  }
+
+  .individual-order__wrapper {
+    flex-direction: row;
+    align-items: baseline;
   }
 
   .individual-order__type {
@@ -450,7 +456,7 @@
 
   .individual-order__field + .individual-order__radio {
     top: -6px;
-    left: 10px;
+    left: 7px;
     width: 52px;
     height: 52px;
   }
@@ -523,19 +529,19 @@
   .individual-order__header {
     padding-left: 225px;
     padding-right: 225px;
+    width: 1150px;
   }
 
   .individual-order__section {
     justify-content: flex-start;
     padding-top: 40px;
     padding-bottom: 20px;
-    padding-left: 112px;
-    padding-right: 220px;
+    padding-left: 0;
+    padding-right: 0;
 
     &--color {
       padding-top: 50px;
       padding-bottom: 26px;
-      padding-right: 180px;
     }
 
     &--name {
@@ -556,6 +562,16 @@
     &--textarea {
       padding-top: 50px;
       padding-bottom: 10px;
+    }
+  }
+
+  .individual-order__wrapper {
+    width: 1150px;
+    padding-left: 112px;
+    padding-right: 220px;
+
+    &--color {
+      padding-right: 180px;
     }
   }
 
@@ -611,8 +627,8 @@
 
   .individual-order__footer {
     width: 700px;
-    margin-left: 225px;
-    margin-right: 225px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 3px;
   }
 }

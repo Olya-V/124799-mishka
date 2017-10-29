@@ -4,6 +4,7 @@
 
 .catalog__wrap {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
 }
 
@@ -32,11 +33,14 @@
 
   .catalog__wrap {
     flex-direction: row;
-    justify-content: space-between;
   }
 
   .catalog__item {
     flex-direction: column;
     width: 315px;
+
+    &:not(:nth-child(3n)) {
+      margin-right: 51px;
+    }
   }
 }

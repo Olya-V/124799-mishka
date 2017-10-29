@@ -21,12 +21,14 @@
 
 .footer-copyright__details {
   @include font(19px, bold, 18px, $c-title-black);
+  width: 127px;
+  margin-left: 37px;
+  margin-right: 30px;
 }
 
 .footer-copyright__link {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
   align-items: center;
 }
 
@@ -34,6 +36,8 @@
   margin-top: 22px;
   margin-bottom: 20px;
   fill: $c-hit-label;
+  width: 27px;
+  height: 34px;
 }
 
 @media (min-width: $tablet-width) {
@@ -43,6 +47,11 @@
 
   .footer-copyright__logo {
     margin: 0;
+  }
+
+  .footer-copyright__details {
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .footer-copyright__link {

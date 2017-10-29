@@ -37,9 +37,10 @@
   width: 21px;
   height: 21px;
   border: none;
-  background-image: url("../img/icon-menu-open.svg");
+  background-image: url("../img/menu-open.svg");
   background-repeat: no-repeat;
   background-color: transparent;
+  border-radius: inherit;
   cursor: pointer;
 }
 
@@ -62,7 +63,7 @@
       }
 
       .main-header__toggle {
-        background-image: url("../img/icon-menu-open.svg");
+        background-image: url("../img/menu-open.svg");
       }
     }
 
@@ -88,7 +89,7 @@
 
       .main-header__toggle {
         top: 7%;
-        background-image: url("../img/icon-menu-close.svg");
+        background-image: url("../img/menu-close.svg");
       }
 
       .main-header__site,
