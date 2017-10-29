@@ -1,17 +1,17 @@
 .week-hit {
   display: flex;
+  padding: 0 9.37%;
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-repeat: repeat-x;
+  background-position: bottom;
+  background-size: auto 6px;
 }
 
 .week-hit__container {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  background-image: url("../img/bg-zigzag-line.svg");
-  padding: 0 9.37%;
+  width: 320px;
   margin: 0 auto;
-  background-repeat: repeat-x;
-  background-position: bottom;
-  background-size: auto 6px;
 }
 
 .week-hit__title {
@@ -32,14 +32,19 @@
 }
 
 @media (min-width: $tablet-width) {
+  .week-hit {
+    padding: 0;
+    background-size: auto 17px;
+  }
+
   .week-hit__container {
     align-items: center;
-    padding: 0 6.5%;
-    flex-direction: row;
-    flex-wrap: wrap;
+    width: 768px;
+    padding: 0 50px;
     padding-top: 33px;
     padding-bottom: 30px;
-    background-size: auto 17px;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .week-hit__title {
@@ -73,7 +78,10 @@
 
 @media (min-width: $desktop-width) {
   .week-hit {
+    width: 1150px;
+    margin: 0 auto;
     padding-bottom: 0;
+    background-size: auto 23px;
   }
 
   .week-hit__container {
@@ -82,7 +90,6 @@
     padding: 0;
     padding-top: 112px;
     padding-bottom: 56px;
-    background-size: auto 23px;
   }
 
   .week-hit__title {
