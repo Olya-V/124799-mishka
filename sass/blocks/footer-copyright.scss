@@ -21,6 +21,7 @@
 
 .footer-copyright__details {
   @include font(19px, bold, 18px, $c-title-black);
+  width: 127px;
 }
 
 .footer-copyright__link {
@@ -34,6 +35,8 @@
   margin-top: 22px;
   margin-bottom: 20px;
   fill: $c-hit-label;
+  width: 27px;
+  height: 34px;
 }
 
 @media (min-width: $tablet-width) {

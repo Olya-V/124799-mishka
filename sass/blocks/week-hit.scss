@@ -1,6 +1,11 @@
+.week-hit {
+  display: flex;
+}
+
 .week-hit__container {
   display: flex;
   flex-direction: column;
+  width: 100%;
   background-image: url("../img/bg-zigzag-line.svg");
   padding: 0 9.37%;
   margin: 0 auto;

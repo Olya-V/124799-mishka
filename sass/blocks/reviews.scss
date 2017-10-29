@@ -49,11 +49,15 @@
 
 .reviews__button {
   font-size: 18px;
+  max-width: 260px;
+  align-self: center;
 }
 
 .reviews__buttons {
   display: inline-flex;
   margin-bottom: 34px;
+  max-width: 260px;
+  align-self: center;
 }
 
 .reviews__icon {
@@ -90,6 +94,7 @@
     position: relative;
     flex-direction: row;
     flex-wrap: wrap;
+    margin: 0 auto;
     padding: 0 50px;
     padding-top: 77px;
     padding-bottom: 95px;
