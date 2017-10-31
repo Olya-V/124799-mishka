@@ -94,7 +94,18 @@
 @media (min-width: $tablet-width) {
   .reviews {
     padding-bottom: 0;
-    padding: 0 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 350px auto;
+
+    @media (min-resolution: $retina-dpi),
+      (min-resolution: $retina-dppx) {
+      background-image: url("../img/review@2x.jpg");
+    }
   }
 
   .reviews__container {
@@ -105,20 +116,10 @@
     margin: 0 auto;
     padding-top: 77px;
     padding-bottom: 95px;
-    background-image: url("../img/bg-zigzag-line.svg"),
-      url("../img/review@1x.jpg");
-    background-repeat: repeat-x,
-      no-repeat;
-    background-position: bottom,
-      0 0;
-    background-size: auto 17px,
-      350px auto;
-
-    @media (min-resolution: $retina-dpi),
-      (min-resolution: $retina-dppx) {
-      background-image: url("../img/bg-zigzag-line.svg"),
-        url("../img/review@2x.jpg");
-    }
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-position: bottom;
+    background-size: auto 17px;
   }
 
   .reviews__section-title {
@@ -153,7 +154,7 @@
     order: 3;
     position: absolute;
     top: 361px;
-    left: 543px;
+    left: 493px;
   }
 
   .reviews__button {
@@ -172,15 +173,15 @@
   .reviews {
     width: 1150px;
     margin: 0 auto;
+    background-position: 48px 7px;
   }
 
   .reviews__container {
-    width: 1150px;
+    width: 1050px;
     margin: 0 auto;
-    padding-left: 220px;
+    padding-left: 170px;
     padding-bottom: 148px;
-    background-position: 48px 7px;
-    background-size: auto 23px, 350px auto;
+    background-size: auto 23px;
   }
 
   .reviews__section-title {
@@ -205,8 +206,8 @@
   }
 
   .reviews__buttons {
-    left: 923px;
-    top: 318px;
+    left: 873px;
+    top: 320px;
   }
 
   .reviews__author {

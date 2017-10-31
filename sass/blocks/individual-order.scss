@@ -121,7 +121,7 @@
 
   &:hover,
   &:focus,
-  &active {
+  &:active {
     border-bottom: 2px solid #62d1ba;
   }
 
@@ -417,6 +417,7 @@
     }
 
     &--color {
+      width: 250px;
       padding-bottom: 20px;
       padding-top: 16px;
       padding-left: 87px;
@@ -610,6 +611,7 @@
     }
 
     &--color {
+      width: 230px;
       padding-left: 92px;
     }
   }

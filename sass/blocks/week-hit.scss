@@ -16,7 +16,6 @@
 
 .week-hit__title {
   margin-bottom: 5px;
-  margin-left: -3px;
 
   @include font(25px, bold, $lh-mobile-title, $c-title-black);
 }
@@ -24,7 +23,7 @@
 .week-hit__label {
   @include font(17px, bold, 20px, $c-hit-label);
   text-transform: uppercase;
-  margin-bottom: 26px;
+  margin-bottom: 25px;
   width: auto;
 }
 
@@ -52,6 +51,7 @@
     margin-top: 0;
     margin-bottom: 0;
     margin-right: 136px;
+    margin-left: -3px;
     font-size: $fs-tablet-title;
     line-height: $lh-tablet-title;
   }
