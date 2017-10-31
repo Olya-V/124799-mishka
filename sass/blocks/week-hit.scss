@@ -1,21 +1,22 @@
 .week-hit {
   display: flex;
   padding: 0 9.37%;
+}
+
+.week-hit__container {
+  display: flex;
+  flex-direction: column;
+  width: 260px;
+  margin: 0 auto;
   background-image: url("../img/bg-zigzag-line.svg");
   background-repeat: repeat-x;
   background-position: bottom;
   background-size: auto 6px;
 }
 
-.week-hit__container {
-  display: flex;
-  flex-direction: column;
-  width: 320px;
-  margin: 0 auto;
-}
-
 .week-hit__title {
   margin-bottom: 5px;
+  margin-left: -3px;
 
   @include font(25px, bold, $lh-mobile-title, $c-title-black);
 }
@@ -33,18 +34,17 @@
 
 @media (min-width: $tablet-width) {
   .week-hit {
-    padding: 0;
-    background-size: auto 17px;
+    padding: 0 50px;
   }
 
   .week-hit__container {
     align-items: center;
     width: 768px;
-    padding: 0 50px;
     padding-top: 33px;
     padding-bottom: 30px;
     flex-direction: row;
     flex-wrap: wrap;
+    background-size: auto 17px;
   }
 
   .week-hit__title {
@@ -81,7 +81,6 @@
     width: 1150px;
     margin: 0 auto;
     padding-bottom: 0;
-    background-size: auto 23px;
   }
 
   .week-hit__container {
@@ -90,6 +89,7 @@
     padding: 0;
     padding-top: 112px;
     padding-bottom: 56px;
+    background-size: auto 23px;
   }
 
   .week-hit__title {
@@ -100,13 +100,15 @@
     font-size: $fs-desktop-title;
     line-height: $lh-desktop-title;
     margin-right: 0;
+    margin-left: 1px;
   }
 
   .week-hit__label {
     order: 0;
     width: 168px;
     padding: 0 30px;
-    padding-top: 13px;
+    padding-right: 40px;
+    padding-top: 9px;
   }
 
   .week-hit__description {
