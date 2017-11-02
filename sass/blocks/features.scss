@@ -23,16 +23,11 @@
   justify-content: flex-start;
   align-items: flex-end;
   margin-bottom: 27px;
-
-  &--narrow {
-    width: 200px;
-  }
-
-  &--wide {
-    width: 250px;
-  }
+  width: 250px;
 
   &--materials {
+    padding-right: 50px;
+
     &::before {
       position: absolute;
       content: "";
@@ -46,6 +41,8 @@
   }
 
   &--style {
+    padding-right: 50px;
+
     &::before {
       position: absolute;
       content: "";
@@ -59,6 +56,8 @@
   }
 
   &--likes {
+    padding-right: 50px;
+
     &::before {
       position: absolute;
       content: "";
@@ -125,7 +124,7 @@
     font-size: $fs-tablet-title;
     line-height: $lh-tablet-title;
     margin-top: 38px;
-    margin-bottom: 52px;
+    margin-bottom: 51px;
     margin-left: -5px;
   }
 
@@ -137,18 +136,11 @@
   .features__item {
     padding-right: 0;
     margin-bottom: 60px;
-
-    &--narrow {
-      width: 239px;
-      margin-right: 95px;
-    }
-
-    &--wide {
-      width: 295px;
-    }
+    width: 334px;
 
     &--materials {
       order: 0;
+      padding-right: 95px;
 
       &::before {
         top: -2px;
@@ -158,6 +150,7 @@
 
     &--style {
       order: 2;
+      padding-right: 95px;
 
       &::before {
         top: -1px;
@@ -167,6 +160,7 @@
 
     &--likes {
       order: 4;
+      padding-right: 95px;
 
       &::before {
         top: 4px;
@@ -176,6 +170,7 @@
 
     &--knitting {
       order: 1;
+      padding-right: 39px;
 
       &::before {
         top: 1px;
@@ -185,6 +180,7 @@
 
     &--domestic-manufacturer {
       order: 3;
+      padding-right: 39px;
 
       &::before {
         top: 3px;
@@ -194,6 +190,7 @@
 
     &--present-package {
       order: 5;
+      padding-right: 39px;
 
       &::before {
         top: 0;
@@ -224,21 +221,26 @@
     margin-left: -3px;
   }
 
+  .features__list {
+    width: 700px;
+  }
+
   .features__item {
     margin-bottom: 58px;
-
-    &--narrow {
-      margin-right: 112px;
-    }
+    width: 350px;
 
     &--materials {
+      padding-right: 110px;
+
       &::before {
-        top: -2px;
+        top: -4px;
         left: 10px;
       }
     }
 
     &--style {
+      padding-right: 110px;
+
       &::before {
         top: -2px;
         left: 2px;
@@ -246,30 +248,38 @@
     }
 
     &--likes {
+      padding-right: 110px;
+
       &::before {
-        top: 2px;
+        top: 3px;
         left: 9px;
       }
     }
 
     &--knitting {
+      padding-right: 55px;
+
       &::before {
-        top: 1px;
-        left: 2px;
+        top: -1px;
+        left: 4px;
       }
     }
 
     &--domestic-manufacturer {
+      padding-right: 55px;
+
       &::before {
-        top: 1px;
-        left: -7px;
+        top: 2px;
+        left: -4px;
       }
     }
 
     &--present-package {
+      padding-right: 55px;
+
       &::before {
-        top: -2px;
-        left: 1px;
+        top: 1px;
+        left: 4px;
       }
     }
   }

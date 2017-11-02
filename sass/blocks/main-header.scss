@@ -24,6 +24,17 @@
   height: 35px;
 }
 
+.main-header__logo[href] {
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .main-header__images {
   width: 86px;
   height: 35px;
