@@ -9,6 +9,7 @@
     margin-bottom: 39px;
     background-image: url("../img/map-mobile@1x.jpg");
     background-repeat: no-repeat;
+    background-color: #e6e1da;
     height: 457px;
 
     @media (min-resolution: $retina-dpi),
@@ -22,6 +23,7 @@
 .contacts__section-title {
   margin: 0;
   margin-bottom: 26px;
+  margin-left: -2px;
   padding: 0;
 
   @include font(18px, bold, $lh-mobile-title, $c-title-black);
@@ -84,7 +86,7 @@
 @media (min-width: $tablet-width) {
   .contacts {
     padding-top: 40px;
-    margin-bottom: 17px;
+    margin-bottom: 18px;
   }
 
   .contacts__container {
@@ -113,6 +115,7 @@
 
   .contacts__section-title {
     margin-bottom: 50px;
+    margin-left: -4px;
     font-size: $fs-tablet-title;
     line-height: $lh-tablet-title;
   }

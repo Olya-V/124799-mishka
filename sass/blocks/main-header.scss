@@ -24,6 +24,17 @@
   height: 35px;
 }
 
+.main-header__logo[href] {
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .main-header__images {
   width: 86px;
   height: 35px;
@@ -237,7 +248,7 @@
     width: 525px;
     display: block;
     order: 3;
-    padding-left: 4.3%;
+    padding-left: 4.2%;
     background: transparent;
     z-index: 1;
   }
@@ -245,6 +256,7 @@
   .main-header__delivery {
     order: 4;
     width: 525px;
-    padding-right: 4.3%;
+    padding-right: 4.6%;
+    margin-top: 10px;
   }
 }
