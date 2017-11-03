@@ -199,7 +199,6 @@
     }
   }
 
-
   .features__details {
     @include font(20px, bold, 22px, $c-title-black);
   }
@@ -212,7 +211,7 @@
 
   .features__container {
     padding-left: 222px;
-    padding-top: 19px;
+    padding-top: 12px;
   }
 
   .features__section-title {
