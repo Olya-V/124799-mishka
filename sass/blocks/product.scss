@@ -103,9 +103,7 @@
   }
 
   .product__description {
-    flex-grow: 0;
     width: 334px;
-    height: 334px;
     padding-top: 25px;
     padding-left: 26px;
   }
@@ -131,6 +129,7 @@
 @media (min-width: $desktop-width) {
   .product {
     width: 316px;
+    margin-bottom: 57px;
   }
 
   .product__photo {
@@ -141,9 +140,9 @@
   .product__description {
     flex-grow: 1;
     width: 316px;
-    height: 197px;
     padding-top: 27px;
-    padding-bottom: 30px;
+    padding-bottom: 25px;
+    padding-right: 32px;
   }
 
   .product__item-title {
