@@ -189,7 +189,19 @@
   outline: 5px auto -webkit-focus-ring-color;
 }
 
+.individual-order__field:active + .individual-order__radio {
+  border: 2px solid transparentize($c-text, 0.7);
+}
+
 .individual-order__field:checked + .individual-order__radio {
+ border: 2px solid $c-text;
+}
+
+.individual-order__field:checked:hover + .individual-order__radio {
+  border: 2px solid #62d1ba;
+}
+
+.individual-order__field:checked:active + .individual-order__radio {
   border: 2px solid transparentize($c-text, 0.7);
 }
 
@@ -229,7 +241,19 @@
   outline: 5px auto -webkit-focus-ring-color;
 }
 
+.individual-order__field:active + .individual-order__checkbox {
+  border: 2px solid transparentize($c-text, 0.7);
+}
+
 .individual-order__field:checked + .individual-order__checkbox {
+  border: 2px solid $c-text;
+}
+
+.individual-order__field:checked:hover + .individual-order__checkbox {
+  border: 2px solid #62d1ba;
+}
+
+.individual-order__field:checked:active + .individual-order__checkbox {
   border: 2px solid transparentize($c-text, 0.7);
 }
 
